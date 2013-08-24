@@ -326,7 +326,8 @@ slides > slide:not(.nobackground):after {
 /* line 194, ../scss/default.scss */
 slides > slide.title-slide:after {
   content: '';
-  background: url(../../images/iprofs-logo-400x109.jpeg) no-repeat 100% 50%;   /* TODO find an appropriate logo */
+  background: url(../../images/iprofs-logo-400x109.jpeg) no-repeat 100% 50%;
+  /* TODO find an appropriate logo */
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
