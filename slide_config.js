@@ -1,7 +1,7 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Modern Web Development Workflow<br>With AngularJS',
+    title: 'Modern Web Development<br>Workflow With AngularJS',
     subtitle: 'Structuring your web projects with Yeoman and Maven<br> and something extra...',
     //eventTitle: 'Google I/O 2013',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
