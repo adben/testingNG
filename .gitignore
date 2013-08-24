@@ -36,3 +36,13 @@ ehthumbs.db
 Icon?
 Thumbs.db
 *~
+
+#   Intellij files   #
+######################
+.classpath
+.idea
+.project
+.settings/
+*.iml
+target/
+atlassian-ide-plugin.xml
