@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -251,8 +251,6 @@ slides > slide {
   padding: 40px 60px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border-radius: 5px;
   -webkit-transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
@@ -326,7 +324,7 @@ slides > slide:not(.nobackground):after {
 /* line 197, ../scss/default.scss */
 slides > slide.title-slide:after {
   content: '';
-  background: url(../../images/iprofs-logo-400x109.jpeg) no-repeat 100% 50%;
+  background: url(../../images/iprofs-logo-400x109.png) no-repeat 100% 50%;
   /* TODO find an appropriate logo */
   -webkit-background-size: contain;
   -moz-background-size: contain;
@@ -342,7 +340,6 @@ slides > slide.title-slide:after {
 slides > slide.backdrop {
   z-index: -10;
   display: block !important;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(85%, #ffffff), color-stop(100%, #e6e6e6));
   background: -webkit-linear-gradient(#ffffff, #ffffff 85%, #e6e6e6);
   background: -moz-linear-gradient(#ffffff, #ffffff 85%, #e6e6e6);
   background: -o-linear-gradient(#ffffff, #ffffff 85%, #e6e6e6);
@@ -591,7 +588,6 @@ dt {
 /* line 426, ../scss/default.scss */
 button {
   display: inline-block;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(40%, #f9f9f9), color-stop(70%, #e3e3e3));
   background: -webkit-linear-gradient(#f9f9f9 40%, #e3e3e3 70%);
   background: -moz-linear-gradient(#f9f9f9 40%, #e3e3e3 70%);
   background: -o-linear-gradient(#f9f9f9 40%, #e3e3e3 70%);
@@ -599,14 +595,13 @@ button {
   border: 1px solid darkgrey;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
   border-radius: 3px;
   padding: 5px 8px;
   outline: none;
   white-space: nowrap;
+  -moz-user-select: -moz-none;
   -webkit-user-select: none;
-  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   cursor: pointer;
   text-shadow: 1px 1px white;
@@ -620,7 +615,6 @@ button:not(:disabled):hover {
 
 /* line 444, ../scss/default.scss */
 button:not(:disabled):active {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(40%, #e3e3e3), color-stop(70%, #f9f9f9));
   background: -webkit-linear-gradient(#e3e3e3 40%, #f9f9f9 70%);
   background: -moz-linear-gradient(#e3e3e3 40%, #f9f9f9 70%);
   background: -o-linear-gradient(#e3e3e3 40%, #f9f9f9 70%);
@@ -726,8 +720,6 @@ button:not(:disabled):active {
 .columns-2 {
   -webkit-column-count: 2;
   -moz-column-count: 2;
-  -ms-column-count: 2;
-  -o-column-count: 2;
   column-count: 2;
 }
 
@@ -752,11 +744,10 @@ table tr:nth-child(odd) {
 table th {
   color: white;
   font-size: 18px;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(40%, #4387fd), color-stop(80%, #2a7cdf)) no-repeat;
   background: -webkit-linear-gradient(top, #4387fd 40%, #2a7cdf 80%) no-repeat;
   background: -moz-linear-gradient(top, #4387fd 40%, #2a7cdf 80%) no-repeat;
   background: -o-linear-gradient(top, #4387fd 40%, #2a7cdf 80%) no-repeat;
-  background: linear-gradient(top, #4387fd 40%, #2a7cdf 80%) no-repeat;
+  background: linear-gradient(to bottom, #4387fd 40%, #2a7cdf 80%) no-repeat;
 }
 /* line 550, ../scss/default.scss */
 table td, table th {
@@ -766,11 +757,10 @@ table td, table th {
 /* line 555, ../scss/default.scss */
 table td.highlight {
   color: #515151;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(40%, #ffd14d), color-stop(80%, #f6c000)) no-repeat;
   background: -webkit-linear-gradient(top, #ffd14d 40%, #f6c000 80%) no-repeat;
   background: -moz-linear-gradient(top, #ffd14d 40%, #f6c000 80%) no-repeat;
   background: -o-linear-gradient(top, #ffd14d 40%, #f6c000 80%) no-repeat;
-  background: linear-gradient(top, #ffd14d 40%, #f6c000 80%) no-repeat;
+  background: linear-gradient(to bottom, #ffd14d 40%, #f6c000 80%) no-repeat;
 }
 /* line 560, ../scss/default.scss */
 table.rows {
@@ -801,8 +791,6 @@ slide.fill {
   background-repeat: no-repeat;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border-radius: 5px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -948,8 +936,6 @@ article.smaller q:before, article.smaller q:after {
   box-pack: center;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border-radius: 5px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -969,8 +955,6 @@ article.smaller q:before, article.smaller q:after {
   background: #fff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 10px #797979;
   -moz-box-shadow: 0 0 10px #797979;
@@ -1025,7 +1009,6 @@ article.smaller q:before, article.smaller q:after {
 }
 /* line 752, ../scss/default.scss */
 .with-notes.popup slide.backdrop {
-  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 600, color-stop(0%, #b1dfff), color-stop(100%, #4387fd));
   background-image: -webkit-radial-gradient(50% 50%, #b1dfff 0%, #4387fd 600px);
   background-image: -moz-radial-gradient(50% 50%, #b1dfff 0%, #4387fd 600px);
   background-image: -o-radial-gradient(50% 50%, #b1dfff 0%, #4387fd 600px);
@@ -1068,8 +1051,6 @@ article.smaller q:before, article.smaller q:after {
   background: #fff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border-radius: 5px;
   height: 100%;
   width: 100%;
@@ -1271,16 +1252,13 @@ aside.gdbar {
   position: absolute;
   left: -1px;
   top: 125px;
-  -webkit-border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0;
   -moz-border-radius: 0 10px 10px 0;
-  -ms-border-radius: 0 10px 10px 0;
-  -o-border-radius: 0 10px 10px 0;
   border-radius: 0 10px 10px 0;
-  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #e6e6e6), color-stop(100%, #e6e6e6)) no-repeat;
   background: -webkit-linear-gradient(left, #e6e6e6, #e6e6e6) no-repeat;
   background: -moz-linear-gradient(left, #e6e6e6, #e6e6e6) no-repeat;
   background: -o-linear-gradient(left, #e6e6e6, #e6e6e6) no-repeat;
-  background: linear-gradient(left, #e6e6e6, #e6e6e6) no-repeat;
+  background: linear-gradient(to right, #e6e6e6, #e6e6e6) no-repeat;
   -webkit-background-size: 0% 100%;
   -moz-background-size: 0% 100%;
   -o-background-size: 0% 100%;
@@ -1386,7 +1364,6 @@ aside.gdbar img {
   cursor: pointer;
   opacity: 0.5;
   pointer-events: auto !important;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(85%, #ffffff), color-stop(100%, #e6e6e6));
   background: -webkit-linear-gradient(#ffffff, #ffffff 85%, #e6e6e6);
   background: -moz-linear-gradient(#ffffff, #ffffff 85%, #e6e6e6);
   background: -o-linear-gradient(#ffffff, #ffffff 85%, #e6e6e6);
@@ -1416,7 +1393,6 @@ aside.gdbar img {
   slides slide {
     display: block !important;
     position: relative;
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(85%, #ffffff), color-stop(100%, #e6e6e6));
     background: -webkit-linear-gradient(#ffffff, #ffffff 85%, #e6e6e6);
     background: -moz-linear-gradient(#ffffff, #ffffff 85%, #e6e6e6);
     background: -o-linear-gradient(#ffffff, #ffffff 85%, #e6e6e6);
