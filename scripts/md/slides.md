@@ -1,3 +1,4 @@
+
 title: Frontend Ecosystem
 subtitle:
 content_class: image
@@ -6,6 +7,7 @@ content_class: image
 <footer class="source">source: http://decodize.com/</footer>
 
 ---
+
 title: Frontend Ecosystem
 subtitle:
 content_class: image
@@ -20,8 +22,8 @@ class: image
 
 ![java ecosystem](gitflow.png)
 
-
 ---
+
 title: Agenda
 class: big
 build_lists: true
@@ -36,10 +38,12 @@ Things we'll (try to) cover;
 - Repository workflow
 
 ---
+
 title:  Demo Overview
 class: image
 
 ---
+
 title: DRCS/SCM workflow
 subtitle: Doing it right?
 content-class: image
@@ -47,11 +51,13 @@ content-class: image
 ![Gitflow](images/gitflow.png)
 
 ---
+
 title: Maven
 subtitle:
 class: segue dark nobackground
 
 ---
+
 title:  Maven
 subtitle:  Build manager for Java projects
 class:
@@ -94,6 +100,7 @@ assertEquals(xmlGregorianCalendar.getDay(), 10);
 </pre>
 
 ---
+
 title: :-S
 
 Class:
@@ -118,6 +125,7 @@ assertEquals(2004, xmlGregorianCalendar.getYear());}
 </pre>
 
 ---
+
 title: TDD
 subtitle: Java ecosystem
 class: image
@@ -125,11 +133,13 @@ class: image
 ![demasiado](java_tdd.png)
 
 ---
+
 title: Yeoman, Grunt and Bower
 subtitle: Frontend Workflow
 class: segue dark nobackground
 
 ---
+
 title: Yeoman
 subtitle: Scaffolds out a new application
 class: image
@@ -144,6 +154,7 @@ build_lists: true
 ![ Algo ](images/yeoman-logo.png)
 
 ---
+
 title: Grunt
 subtitle: Build, preview and test your project
 content-class: image
@@ -151,6 +162,7 @@ content-class: image
 ![ Algo ](images/grunt.png)
 
 ---
+
 title: Demo Project
 subtitle: part 2
 class: title-slide
@@ -159,12 +171,14 @@ Backend : Frontend dev. with Yeoman!
 ![ Algo ](images/toolset.png)
 
 ---
+
 class: nobackground fill
 image: images/framvslib.png
 
 <footer class="source white">http://merrickchristensen.com/articles/learn-js/mvstar-libraries-and-frameworks.html</footer>
 
 ---
+
 title: TDD again!
 subtitle: in JS..
 content-class: image
@@ -172,6 +186,7 @@ content-class: image
 ![ Algo ](images/frontend-tdd.png)
 
 ---
+
 title: Bower
 subtitle: dependency management
 content-class: image
@@ -179,6 +194,7 @@ content-class: image
 ![ Algo ](images/bower-logo.png)
 
 ---
+
 title: Protractor
 subtitle: just for AngularJS
 class: image
@@ -186,18 +202,21 @@ class: image
 ![ Algo ](protractor.png)
 
 ---
+
 title: PhantomJS and SlimerJS
 class: image
 
 ![ Algo ](phantomjs.png)
 
 ---
+
 title: Debugging AngularJS
 subtitle: Hardcore vs Batarang
 class: image
 
 ![Hardcore vs Batarang](image.png)
 ---
+
 title: Current Web Tooling
 subtitle: Bred Victor's dream
 class: image
@@ -205,6 +224,7 @@ class: image
 ![web tooling](chrome-dev-tools.png)
 
 ---
+
 title: Yeoman's dist
 class: image
 
