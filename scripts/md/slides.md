@@ -1,6 +1,6 @@
 title: Frontend Ecosystem
 subtitle:
-class: image
+content_class: image
 
 ![hipster ecosystem](images/frontend-eco1.png)
 <footer class="source">source: http://decodize.com/</footer>
@@ -8,7 +8,7 @@ class: image
 ---
 title: Frontend Ecosystem
 subtitle:
-class: image
+content_class: image
 
 ![hipster ecosystem](images/frontend-eco2.png)
 <footer class="source">source: http://decodize.com/</footer>
@@ -64,6 +64,8 @@ content_class: flexbox vcenter
 
 Backend : Using maven archetypes!
 
+---
+<iframe width="420" height="315" src="//www.youtube.com/embed/kljYH0b9NUc?rel=0" frameborder="0" allowfullscreen></iframe></iframe>
 ---
 title: True story!
 
