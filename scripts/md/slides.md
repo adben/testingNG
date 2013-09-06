@@ -156,11 +156,10 @@ Backend : Frontend dev. with Yeoman!
 ![ Algo ](images/toolset.png)
 
 ---
-title: MV* Framework vs. MV* Library?
-subtitle: anyone?
-content-class: image
+class: nobackground fill
+image: images/framvslib.png
 
-![ Algo ](images/framvslib.png)
+<footer class="source white">http://merrickchristensen.com/articles/learn-js/mvstar-libraries-and-frameworks.html</footer>
 
 ---
 title: TDD again!
