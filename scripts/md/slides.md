@@ -1,3 +1,160 @@
+title: Frontend Ecosystem
+class: image
+![hipster ecosystem](gitflow.png)
+
+
+---
+title: Backend (Java) Ecosystem
+class: image
+![java ecosystem](gitflow.png)
+
+
+---
+title: Agenda
+class: big
+build_lists: true
+
+Things we'll (try to) cover;
+
+- Maven
+- Yeoman
+- Grunt
+- Bower
+- TDD
+- Repository workflow
+
+---
+title:  Demo Overview
+class: image
+
+---
+title: Maven & Yeoman
+subtitle:
+class: segue dark nobackground
+
+---
+title: DRCS/SCM workflow
+subtitle: Doing it right?
+class: image
+
+![Mobile vs desktop users](gitflow.png)
+---
+title:  Maven
+subtitle:  Build manager for Java projects
+class:
+
+---
+
+title: Demo Project,
+content_class: flexbox vcenter
+
+Backend : Using maven archetypes!
+
+---
+title: True story!
+
+Class:
+<pre class="prettyprint" data-lang="java">
+public static final String DATE_PATTERN = "dd-mm-yyy";
+....
+final DateFormat format = new SimpleDateFormat(DATE_PATTERN);
+</pre>
+
+Test:
+<pre class="prettyprint" data-lang="java">
+@Before
+public void setUp() throws Exception {
+validDate = "10-04-2004";
+}
+@Test
+public void testValidGregorianDate() throws Exception {
+....
+assertEquals(xmlGregorianCalendar.getDay(), 10);
+}
+</pre>
+
+---
+title: :-S
+
+Class:
+<pre class="prettyprint" data-lang="java">
+public static final String DATE_PATTERN = "dd-MM-yyy";
+....
+final DateFormat format = new SimpleDateFormat(DATE_PATTERN);
+</pre>
+
+Test:
+<pre class="prettyprint" data-lang="java">
+@Before
+public void setUp() throws Exception {
+validDate = "10-04-2004";
+}
+@Test
+public void testValidGregorianDate() throws Exception {
+....
+assertEquals(10, xmlGregorianCalendar.getDay());
+assertEquals(4, xmlGregorianCalendar.getMonth());
+assertEquals(2004, xmlGregorianCalendar.getYear());}
+</pre>
+
+---
+title:
+subtitle:
+class:
+
+---
+title:
+subtitle:
+class:
+
+---
+title:
+subtitle:
+class:
+
+---
+title:
+subtitle:
+class:
+
+---
+title:
+subtitle:
+class:
+
+---
+title:
+subtitle:
+class:
+
+---
+title:
+subtitle:
+class:
+
+---
+title:
+subtitle:
+class:
+
+---
+title:
+subtitle:
+class:
+
+---
+title:
+subtitle:
+class:
+
+---
+title:
+subtitle:
+class:
+
+---
+
+
 title: Slide Title
 subtitle: Subtitle
 class: image
@@ -52,7 +209,7 @@ Media Queries are sweet:
 
 title: Once more, with JavaScript
 
-<pre class="prettyprint" data-lang="javascript">
+<pre class="prettyprint" data-lang="java">
 function isSmall() {
   return window.matchMedia("(min-device-width: ???)").matches;
 }
