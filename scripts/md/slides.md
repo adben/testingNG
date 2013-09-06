@@ -1,11 +1,23 @@
 title: Frontend Ecosystem
+subtitle:
 class: image
-![hipster ecosystem](gitflow.png)
 
+![hipster ecosystem](images/frontend-eco1.png)
+<footer class="source">source: http://decodize.com/</footer>
 
 ---
+title: Frontend Ecosystem
+subtitle:
+class: image
+
+![hipster ecosystem](images/frontend-eco2.png)
+<footer class="source">source: http://decodize.com/</footer>
+
+---
+
 title: Backend (Java) Ecosystem
 class: image
+
 ![java ecosystem](gitflow.png)
 
 
