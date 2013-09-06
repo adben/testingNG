@@ -28,16 +28,17 @@ title:  Demo Overview
 class: image
 
 ---
-title: Maven & Yeoman
-subtitle:
-class: segue dark nobackground
-
----
 title: DRCS/SCM workflow
 subtitle: Doing it right?
 class: image
 
 ![Mobile vs desktop users](gitflow.png)
+
+---
+title: Maven
+subtitle:
+class: segue dark nobackground
+
 ---
 title:  Maven
 subtitle:  Build manager for Java projects
@@ -45,7 +46,8 @@ class:
 
 ---
 
-title: Demo Project,
+title: Demo Project
+subtitle: part 1
 content_class: flexbox vcenter
 
 Backend : Using maven archetypes!
@@ -98,86 +100,109 @@ assertEquals(2004, xmlGregorianCalendar.getYear());}
 </pre>
 
 ---
-title:
-subtitle:
-class:
-
----
-title:
-subtitle:
-class:
-
----
-title:
-subtitle:
-class:
-
----
-title:
-subtitle:
-class:
-
----
-title:
-subtitle:
-class:
-
----
-title:
-subtitle:
-class:
-
----
-title:
-subtitle:
-class:
-
----
-title:
-subtitle:
-class:
-
----
-title:
-subtitle:
-class:
-
----
-title:
-subtitle:
-class:
-
----
-title:
-subtitle:
-class:
-
----
-
-
-title: Slide Title
-subtitle: Subtitle
+title: TDD
+subtitle: Java ecosystem
 class: image
 
-![Mobile vs desktop users](image.png)
+![demasiado](java_tdd.png)
+
+---
+title: Yeoman
+subtitle: Frontend Workflow
+class: segue dark nobackground
+
+---
+title: Yeoman
+class: image
+![ Algo ](yeoman.png)
+
+
+---
+title: Grunt
+class: image
+![ Algo ](grunt.png)
+
+---
+title: Yeoman
+class: generators
+build_lists: true
+
+- generator angular
+- generator
+- generator
+- generator
+- generator
+
+---
+title: Demo Project
+subtitle: part 2
+content_class: flexbox vcenter
+
+Backend : Frontend dev. with Yeoman!
+
+
+---
+title: TDD again!
+class: image
+![ Algo ](frontend-tdd.png)
+
+
+---
+title: Bower
+class: image
+![ Algo ](bower.png)
+
+---
+title: Protractor
+subtitle: just for AngularJS
+class: image
+![ Algo ](protractor.png)
+
+---
+title: PhantomJS and SlimerJS
+class: image
+![ Algo ](phantomjs.png)
+
+---
+title: Debugging AngularJS
+subtitle: Hardcore vs Batarang
+class: image
+
+![Hardcore vs Batarang](image.png)
+---
+title: Current Web Tooling
+subtitle: Bred Victor's dream
+class: image
+
+![web tooling](chrome-dev-tools.png)
+
+---
+title: Yeoman's dist
+class: image
+
+![web tooling](yeoman-dist.png)
 
 ---
 
-title: Segue Slide
-subtitle: Subtitle
+title: Maven & Yeoman
 class: segue dark nobackground
 
 ---
 
-title: Agenda
-class: big
+title: Releasing
+class: maven-release-plugin ?
 build_lists: true
-
-Things we'll cover (list should build):
 
 - Bullet1
 - Bullet2
 - Bullet3
+
+---
+
+title: Shipping
+class: image
+![ Algo ](shipping.png)
+
 
 ---
 
