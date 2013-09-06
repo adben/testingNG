@@ -65,11 +65,15 @@ content_class: flexbox vcenter
 Backend : Using maven archetypes!
 
 ---
-<iframe width="420" height="315" src="//www.youtube.com/embed/kljYH0b9NUc?rel=0" frameborder="0" allowfullscreen></iframe></iframe>
+
+content_class: vcenter
+
+<iframe width="420" height="420" src="//www.youtube.com/embed/kljYH0b9NUc?HD=1;rel=0;showinfo=0;controls=0" frameborder="0" allowfullscreen></iframe>
+
+<footer class="source">source: http://www.youtube.com/embed/kljYH0b9NUc</footer>
 ---
 title: True story!
 
-Class:
 <pre class="prettyprint" data-lang="java">
 public static final String DATE_PATTERN = "dd-mm-yyy";
 ....
@@ -121,24 +125,14 @@ class: image
 ![demasiado](java_tdd.png)
 
 ---
-title: Yeoman
+title: Yeoman, Grunt and Bower
 subtitle: Frontend Workflow
 class: segue dark nobackground
 
 ---
 title: Yeoman
-content-class: image
-![ Algo ](images/yeoman-logo.png)
-
-
----
-title: Grunt
-content-class: image
-![ Algo ](images/grunt.png)
-
----
-title: Yeoman
-class: generators
+subtitle: Scaffolds out a new application
+class: image
 build_lists: true
 
 - generator angular
@@ -147,10 +141,19 @@ build_lists: true
 - generator
 - generator
 
+![ Algo ](images/yeoman-logo.png)
+
+---
+title: Grunt
+subtitle: Build, preview and test your project
+content-class: image
+
+![ Algo ](images/grunt.png)
+
 ---
 title: Demo Project
 subtitle: part 2
-content_class: flexbox vcenter
+class: title-slide
 
 Backend : Frontend dev. with Yeoman!
 ![ Algo ](images/toolset.png)
@@ -170,6 +173,7 @@ content-class: image
 
 ---
 title: Bower
+subtitle: dependency management
 content-class: image
 
 ![ Algo ](images/bower-logo.png)
