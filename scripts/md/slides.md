@@ -203,6 +203,15 @@ title: Shipping
 class: image
 ![ Algo ](shipping.png)
 
+---
+
+title: Conclusions ??
+class: generators
+build_lists: true
+
+- New web development Architecture demands a better back-end and front-end integration
+- Future of yeoman looks promising!
+- More generators in yeoman.
 
 ---
 
