@@ -72,13 +72,14 @@ Backend : Using maven archetypes!
 
 ---
 
-content_class: vcenter
+<iframe width="420" height="420" src="//www.youtube.com/embed/2tRo4jVCnIM?HD=1;rel=0;showinfo=0;controls=0" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="420" height="420" src="//www.youtube.com/embed/kljYH0b9NUc?HD=1;rel=0;showinfo=0;controls=0" frameborder="0" allowfullscreen></iframe>
+<footer class="source">source: https://www.youtube.com/watch?v=2tRo4jVCnIM</footer>
 
-<footer class="source">source: http://www.youtube.com/embed/kljYH0b9NUc</footer>
 ---
+
 title: True story!
+content-class: smaller
 
 <pre class="prettyprint" data-lang="java">
 public static final String DATE_PATTERN = "dd-mm-yyy";
@@ -102,8 +103,8 @@ assertEquals(xmlGregorianCalendar.getDay(), 10);
 ---
 
 title: :-S
+content-class: smaller
 
-Class:
 <pre class="prettyprint" data-lang="java">
 public static final String DATE_PATTERN = "dd-MM-yyy";
 ....
