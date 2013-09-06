@@ -42,9 +42,9 @@ class: image
 ---
 title: DRCS/SCM workflow
 subtitle: Doing it right?
-class: image
+content-class: image
 
-![Mobile vs desktop users](gitflow.png)
+![Gitflow](images/gitflow.png)
 
 ---
 title: Maven
@@ -127,14 +127,14 @@ class: segue dark nobackground
 
 ---
 title: Yeoman
-class: image
-![ Algo ](yeoman.png)
+content-class: image
+![ Algo ](images/yeoman-logo.png)
 
 
 ---
 title: Grunt
-class: image
-![ Algo ](grunt.png)
+content-class: image
+![ Algo ](images/grunt.png)
 
 ---
 title: Yeoman
@@ -153,28 +153,39 @@ subtitle: part 2
 content_class: flexbox vcenter
 
 Backend : Frontend dev. with Yeoman!
+![ Algo ](images/toolset.png)
 
+---
+title: MV* Framework vs. MV* Library?
+subtitle: anyone?
+content-class: image
+
+![ Algo ](images/framvslib.png)
 
 ---
 title: TDD again!
-class: image
-![ Algo ](frontend-tdd.png)
+subtitle: in JS..
+content-class: image
 
+![ Algo ](images/frontend-tdd.png)
 
 ---
 title: Bower
-class: image
-![ Algo ](bower.png)
+content-class: image
+
+![ Algo ](images/bower-logo.png)
 
 ---
 title: Protractor
 subtitle: just for AngularJS
 class: image
+
 ![ Algo ](protractor.png)
 
 ---
 title: PhantomJS and SlimerJS
 class: image
+
 ![ Algo ](phantomjs.png)
 
 ---
