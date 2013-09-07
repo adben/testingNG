@@ -79,7 +79,7 @@ Backend : Using maven archetypes!
 ---
 
 title: True story!
-content-class: smaller
+class: smaller
 
 <pre class="prettyprint" data-lang="java">
 public static final String DATE_PATTERN = "dd-mm-yyy";
@@ -189,6 +189,8 @@ content-class: smaller
     </tr>
 </table>
 
+<footer class="source">source: https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#Java</footer>
+
 ---
 
 title: Yeoman, Grunt and Bower
@@ -233,6 +235,81 @@ class: nobackground fill
 image: images/framvslib.png
 
 <footer class="source white">http://merrickchristensen.com/articles/learn-js/mvstar-libraries-and-frameworks.html</footer>
+
+---
+
+title: TDD again!
+subtitle: Ecosystem in JS..
+class: smaller
+
+<table>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Suitest</td>
+        <td>DOH</td>
+        <td>LBRTW UT</td>
+        <td>JSUnit</td>
+        <td>Enhance JS</td>
+        <td>QUnit</td>
+        <td>RhUnit</td>
+        <td>Crosscheck</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>J3Unit</td>
+        <td>Mocha</td>
+        <td>intern</td>
+        <td>JSNUnit</td>
+        <td>YUI Test</td>
+        <td>JSSpec</td>
+        <td>UnitTesting</td>
+        <td>JSpec</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Jasmine</td>
+        <td>screw-unit</td>
+        <td>Test.Simple</td>
+        <td>Test.More</td>
+        <td>TestCase</td>
+        <td>TestIt</td>
+        <td>jsUnitTest</td>
+        <td>JSTest</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>JSTest.NET</td>
+        <td>jsUnity</td>
+        <td>RhinoUnit</td>
+        <td>JasUnit</td>
+        <td>FireUnit</td>
+        <td>Js-test-driver</td>
+        <td>Js-test-runner</td>
+        <td>Sinon.js</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>SOAtest</td>
+        <td>Vows</td>
+        <td>Nodeunit</td>
+        <td>Tyrtle</td>
+        <td>wru</td>
+        <td>Buster.JS</td>
+</table>
+
+<footer class="source">source: https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#JavaScript</footer>
+
 
 ---
 
