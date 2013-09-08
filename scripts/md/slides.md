@@ -373,12 +373,13 @@ class: segue dark nobackground
 
 ---
 
-title: What are the options?
+class: dark
 content_class: quote smaller flexbox vleft auto-fadein
 build_lists: true
 
-<q>We don’t know how to integrate Grunt tooling into our Maven workflow. Even after setting up Node on our dev. box, there’s no documentation about using Maven with Grunt and everyone seems to want it but there are no blessed solutions out there.</q>
+What are the options?
 
+- <q>We don’t know how to integrate Grunt tooling into our Maven workflow. Even after setting up Node on our dev. box, there’s no documentation about using Maven with Grunt and everyone seems to want it but there are no blessed solutions out there.</q>
  - Consider your backend and front-end code as completely separate entities
  - Ignore modern tooling altogether.
  - Use the Maven-exec plugin to call out to Grunt from your existing build process
