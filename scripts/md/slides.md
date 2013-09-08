@@ -379,18 +379,126 @@ class: segue dark nobackground
 
 ---
 
-title: yeoman-maven-plugin
-class: yeoman-maven-plugin
+title: What are the options?
+class: quote columns-2
+content_class: flexbox vleft auto-fadein
 build_lists: true
 
-- Bullet1 github
-- Bullet2
-- Bullet3
+<q>We don’t know how to integrate Grunt tooling into our Maven workflow. Even after setting up Node on our dev. box, there’s no documentation about using Maven with Grunt and everyone seems to want it but there are no blessed solutions out there.</q>
 
-------
+ - Consider your backend and front-end code as completely separate entities
+ - Ignore modern tooling altogether.
+ - Use the Maven-exec plugin to call out to Grunt from your existing build process
+
+
+<footer class="source">source is Osmani of course!: http://addyosmani.com/blog/making-maven-grunt/</footer>
+
+---
+
+title: yeoman-maven-plugin
+content_class: small
+
+Declare the plugin:
+
+<pre class="prettyprint" data-lang="xml">
+<plugin>
+      <groupId>com.github.trecloux</groupId>
+      <artifactId>yeoman-maven-plugin</artifactId>
+      <version>0.1</version>
+      <executions>
+          <execution>
+              <goals>
+                  <goal>build</goal>
+              </goals>
+          </execution>
+      </executions>
+  </plugin>
+</pre>
+
+---
+
+title: yeoman-maven-plugin
+content_class: small
+
+Add the yeoman dist directory to our WAR file:
+
+<pre class="prettyprint" data-lang="xml">
+<plugin>
+    <artifactId>maven-war-plugin</artifactId>
+    <version>2.4</version>
+            <configuration>
+        <webResources>
+            <resource>
+                <directory>yo/dist</directory>
+            </resource>
+        </webResources>
+    </configuration>
+</plugin>
+</pre>
+
+---
+
+title: yeoman-maven-plugin
+content_class: small
+
+And clean the generated directories:
+
+<pre class="prettyprint" data-lang="xml">
+<plugin>
+    <artifactId>maven-clean-plugin</artifactId>
+    <version>2.5</version>
+    <configuration>
+        <filesets>
+            <fileset>
+                <directory>yo/dist</directory>
+            </fileset>
+            <fileset>
+                <directory>yo/.tmp</directory>
+            </fileset>
+            <fileset>
+                <directory>yo/app/components</directory>
+            </fileset>
+            <fileset>
+              <directory>yo/node_modules</directory>
+            </fileset>
+        </filesets>
+    </configuration>
+</plugin>
+</pre>
+
+---
+
+title: yeoman-maven-plugin
+class: big
+build_lists: true
+
+We can integrate <a href="http://www.eclipse.org/jetty/">Jetty</a> as well:
+
+<pre class="prettyprint" data-lang="xml">
+<plugin>
+    <groupId>org.mortbay.jetty</groupId>
+    <artifactId>jetty-maven-plugin</artifactId>
+    <version>8.1.4.v20120524</version>
+    <configuration>
+        <stopKey>foo</stopKey>
+        <stopPort>8000</stopPort>
+        <reload>manual</reload>
+        <webAppConfig>
+            <contextPath>/${project.name}</contextPath>
+            <baseResource implementation="org.eclipse.jetty.util.resource.ResourceCollection">
+                <resourcesAsCSV>src/main/webapp,yo/dist</resourcesAsCSV>
+            </baseResource>
+        </webAppConfig>
+    </configuration>
+</plugin>
+</pre>
+
+<footer class="source">source: http://jpgmr.wordpress.com/2013/06/12/jetty-and-the-yeoman-maven-plugin/</footer>
+
+---
 
 title: Releasing
-class: maven-release-plugin ?
+class: big
 build_lists: true
 
 - Bullet1
@@ -417,8 +525,8 @@ task requirejs(type: Exec) {
 
 ![ Algo ](images/bower-logo.png)
 
-<footer class="source">source: http://naleid.com/blog/2013/01/24/calling-gruntjs-tasks-from-gradle/
-</footer>
+<footer class="source">source: http://naleid.com/blog/2013/01/24/calling-gruntjs-tasks-from-gradle/</footer>
+
 ---
 
 title: Conclusions ??
