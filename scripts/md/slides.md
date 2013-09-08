@@ -420,7 +420,7 @@ title: yeoman-maven-plugin
 
 Add the yeoman dist directory to our WAR file:
 
-<pre class="prettyprint" data-lang="xml">
+<pre class="prettyprint" lang-xml data-lang="pom.xml">
 &lt;plugin&gt;
     &lt;artifactId&gt;maven-war-plugin&lt;/artifactId&gt;
     &lt;version&gt;2.4&lt;/version&gt;
@@ -441,7 +441,7 @@ content_class: smaller
 
 And clean the generated directories:
 
-<pre class="prettyprint" data-lang="xml">
+<pre class="prettyprint" lang-xml data-lang="pom.xml">
 &lt;plugin&gt;
     &lt;artifactId&gt;maven-clean-plugin&lt;/artifactId&gt;
     &lt;version&gt;2.5&lt;/version&gt;
@@ -467,28 +467,27 @@ And clean the generated directories:
 ---
 
 title: yeoman-maven-plugin
-class: big
-build_lists: true
+content_class: smaller
 
 We can integrate <a href="http://www.eclipse.org/jetty/">Jetty</a> as well:
 
-<pre class="prettyprint" data-lang="xml">
-<plugin>
-    <groupId>org.mortbay.jetty</groupId>
-    <artifactId>jetty-maven-plugin</artifactId>
-    <version>8.1.4.v20120524</version>
-    <configuration>
-        <stopKey>foo</stopKey>
-        <stopPort>8000</stopPort>
-        <reload>manual</reload>
-        <webAppConfig>
-            <contextPath>/${project.name}</contextPath>
-            <baseResource implementation="org.eclipse.jetty.util.resource.ResourceCollection">
-                <resourcesAsCSV>src/main/webapp,yo/dist</resourcesAsCSV>
-            </baseResource>
-        </webAppConfig>
-    </configuration>
-</plugin>
+<pre class="prettyprint" lang-xml data-lang="pom.xml">
+&lt;plugin&gt;
+    &lt;groupId&gt;org.mortbay.jetty&lt;/groupId&gt;
+    &lt;artifactId&gt;jetty-maven-plugin&lt;/artifactId&gt;
+    &lt;version&gt;8.1.4.v20120524&lt;/version&gt;
+    &lt;configuration&gt;
+        &lt;stopKey&gt;foo&lt;/stopKey&gt;
+        &lt;stopPort&gt;8000&lt;/stopPort&gt;
+        &lt;reload&gt;manual&lt;/reload&gt;
+        &lt;webAppConfig&gt;
+            &lt;contextPath&gt;/${project.name}&lt;/contextPath&gt;
+            &lt;baseResource implementation=&quot;org.eclipse.jetty.util.resource.ResourceCollection&quot;&gt;
+                &lt;resourcesAsCSV&gt;src/main/webapp,yo/dist&lt;/resourcesAsCSV&gt;
+            &lt;/baseResource&gt;
+        &lt;/webAppConfig&gt;
+    &lt;/configuration&gt;
+&lt;/plugin&gt;
 </pre>
 
 <footer class="source">source: http://jpgmr.wordpress.com/2013/06/12/jetty-and-the-yeoman-maven-plugin/</footer>
