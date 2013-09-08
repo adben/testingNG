@@ -373,6 +373,16 @@ class: segue dark nobackground
 
 ---
 
+title: yeoman-maven-plugin
+class: yeoman-maven-plugin
+build_lists: true
+
+- Bullet1 github
+- Bullet2
+- Bullet3
+
+------
+
 title: Releasing
 class: maven-release-plugin ?
 build_lists: true
@@ -394,8 +404,8 @@ class: generators
 build_lists: true
 
 - New web development Architecture demands a better back-end and front-end integration
-- Future of yeoman looks promising!
-- More generators in yeoman.
+- Other Conclusions? you gotta be kidding me!
+- JS-Java live in perpetual work in progress
 
 ---
 
