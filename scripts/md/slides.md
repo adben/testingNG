@@ -393,7 +393,7 @@ build_lists: true
 
 ---
 
-title: yeoman-maven-plugin
+title: Maven and Yo/Grunt :  yeoman-maven-plugin
 
 Declare the plugin:
 
@@ -414,7 +414,7 @@ Declare the plugin:
 
 ---
 
-title: yeoman-maven-plugin
+title: Maven and Yo : maven-war-plugin
 
 Add the yeoman dist directory to our WAR file:
 
@@ -434,7 +434,7 @@ Add the yeoman dist directory to our WAR file:
 
 ---
 
-title: yeoman-maven-plugin
+title: Maven and Yo : maven-clean-plugin
 content_class: smaller
 
 And clean the generated directories:
@@ -464,7 +464,38 @@ And clean the generated directories:
 
 ---
 
-title: yeoman-maven-plugin
+title: Maven and Bower : exec-maven-plugin
+content_class: smaller
+
+And clean the generated directories:
+
+<pre class="prettyprint" lang-xml data-lang="pom.xml">
+&lt;plugin&gt;
+   &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+   &lt;artifactId&gt;exec-maven-plugin&lt;/artifactId&gt;
+   &lt;executions&gt;
+     &lt;execution&gt;
+     &lt;phase&gt;generate-sources&lt;/phase&gt;
+     &lt;goals&gt;
+      &lt;goal&gt;exec&lt;/goal&gt;
+     &lt;/goals&gt;
+     &lt;/execution&gt;
+   &lt;/executions&gt;
+   &lt;configuration&gt;
+     &lt;executable&gt;bower&lt;/executable&gt;
+     &lt;arguments&gt;
+      &lt;argument&gt;install&lt;/argument&gt;
+     &lt;/arguments&gt;
+     &lt;workingDirectory&gt;${basedir}/src/main/webapp&lt;/workingDirectory&gt;
+   &lt;/configuration&gt;
+ &lt;/plugin&gt;
+</pre>
+
+<footer class="source">source Xebia: http://blog.xebia.com/2013/06/15/maven-user-starting-with-javascript-package-management/</footer>
+
+---
+
+title: What about Jetty? jetty-maven-plugin
 content_class: smaller
 
 We can integrate <a href="http://www.eclipse.org/jetty/">Jetty</a> as well:
