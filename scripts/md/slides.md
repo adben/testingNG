@@ -79,7 +79,7 @@ Backend : Using maven archetypes!
 ---
 
 title: True story!
-class: smaller
+conten_class: smaller
 
 <pre class="prettyprint" data-lang="java">
 public static final String DATE_PATTERN = "dd-mm-yyy";
@@ -396,7 +396,6 @@ build_lists: true
 ---
 
 title: yeoman-maven-plugin
-content_class: small
 
 Declare the plugin:
 
@@ -418,7 +417,6 @@ Declare the plugin:
 ---
 
 title: yeoman-maven-plugin
-content_class: small
 
 Add the yeoman dist directory to our WAR file:
 
@@ -439,7 +437,7 @@ Add the yeoman dist directory to our WAR file:
 ---
 
 title: yeoman-maven-plugin
-content_class: small
+content_class: smaller
 
 And clean the generated directories:
 
