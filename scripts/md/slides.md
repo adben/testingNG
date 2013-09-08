@@ -417,6 +417,8 @@ task requirejs(type: Exec) {
 
 ![ Algo ](images/bower-logo.png)
 
+<footer class="source">source: http://naleid.com/blog/2013/01/24/calling-gruntjs-tasks-from-gradle/
+</footer>
 ---
 
 title: Conclusions ??
