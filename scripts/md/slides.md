@@ -197,11 +197,13 @@ title: Yeoman, Grunt and Bower
 subtitle: Frontend Workflow
 class: segue dark nobackground
 
+![ Algo ](images/toolset.png)
+
 ---
 
 title: Yeoman
 subtitle: Scaffolds out a new application
-class: image
+class: columns-2
 build_lists: true
 
 - generator angular
@@ -216,7 +218,7 @@ build_lists: true
 
 title: Grunt
 subtitle: Build, preview and test your project
-content-class: image
+class: columns-2
 
 ![ Algo ](images/grunt.png)
 
@@ -224,10 +226,10 @@ content-class: image
 
 title: Demo Project
 subtitle: part 2
-class: title-slide
+class: center
 
 Backend : Frontend dev. with Yeoman!
-![ Algo ](images/toolset.png)
+![ Algo ](images/yeoman.webp)
 
 ---
 
