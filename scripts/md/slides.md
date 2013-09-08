@@ -401,18 +401,18 @@ content_class: small
 Declare the plugin:
 
 <pre class="prettyprint" data-lang="xml">
-<plugin>
-      <groupId>com.github.trecloux</groupId>
-      <artifactId>yeoman-maven-plugin</artifactId>
-      <version>0.1</version>
-      <executions>
-          <execution>
-              <goals>
-                  <goal>build</goal>
-              </goals>
-          </execution>
-      </executions>
-  </plugin>
+&lt;plugin&gt;
+      &lt;groupId&gt;com.github.trecloux&lt;/groupId&gt;
+      &lt;artifactId&gt;yeoman-maven-plugin&lt;/artifactId&gt;
+      &lt;version&gt;0.1&lt;/version&gt;
+      &lt;executions&gt;
+          &lt;execution&gt;
+              &lt;goals&gt;
+                  &lt;goal&gt;build&lt;/goal&gt;
+              &lt;/goals&gt;
+          &lt;/execution&gt;
+      &lt;/executions&gt;
+  &lt;/plugin&gt;
 </pre>
 
 ---
@@ -423,17 +423,17 @@ content_class: small
 Add the yeoman dist directory to our WAR file:
 
 <pre class="prettyprint" data-lang="xml">
-<plugin>
-    <artifactId>maven-war-plugin</artifactId>
-    <version>2.4</version>
-            <configuration>
-        <webResources>
-            <resource>
-                <directory>yo/dist</directory>
-            </resource>
-        </webResources>
-    </configuration>
-</plugin>
+&lt;plugin&gt;
+    &lt;artifactId&gt;maven-war-plugin&lt;/artifactId&gt;
+    &lt;version&gt;2.4&lt;/version&gt;
+            &lt;configuration&gt;
+        &lt;webResources&gt;
+            &lt;resource&gt;
+                &lt;directory&gt;yo/dist&lt;/directory&gt;
+            &lt;/resource&gt;
+        &lt;/webResources&gt;
+    &lt;/configuration&gt;
+&lt;/plugin&gt;
 </pre>
 
 ---
@@ -444,26 +444,26 @@ content_class: small
 And clean the generated directories:
 
 <pre class="prettyprint" data-lang="xml">
-<plugin>
-    <artifactId>maven-clean-plugin</artifactId>
-    <version>2.5</version>
-    <configuration>
-        <filesets>
-            <fileset>
-                <directory>yo/dist</directory>
-            </fileset>
-            <fileset>
-                <directory>yo/.tmp</directory>
-            </fileset>
-            <fileset>
-                <directory>yo/app/components</directory>
-            </fileset>
-            <fileset>
-              <directory>yo/node_modules</directory>
-            </fileset>
-        </filesets>
-    </configuration>
-</plugin>
+&lt;plugin&gt;
+    &lt;artifactId&gt;maven-clean-plugin&lt;/artifactId&gt;
+    &lt;version&gt;2.5&lt;/version&gt;
+    &lt;configuration&gt;
+        &lt;filesets&gt;
+            &lt;fileset&gt;
+                &lt;directory&gt;yo/dist&lt;/directory&gt;
+            &lt;/fileset&gt;
+            &lt;fileset&gt;
+                &lt;directory&gt;yo/.tmp&lt;/directory&gt;
+            &lt;/fileset&gt;
+            &lt;fileset&gt;
+                &lt;directory&gt;yo/app/components&lt;/directory&gt;
+            &lt;/fileset&gt;
+            &lt;fileset&gt;
+              &lt;directory&gt;yo/node_modules&lt;/directory&gt;
+            &lt;/fileset&gt;
+        &lt;/filesets&gt;
+    &lt;/configuration&gt;
+&lt;/plugin&gt;
 </pre>
 
 ---
