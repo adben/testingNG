@@ -16,7 +16,7 @@ class: fill
 title: Backend (Java) Ecosystem
 class: image
 
-![java ecosystem](gitflow.png)
+![java ecosystem](gitflow-w.png)
 
 ---
 
@@ -42,9 +42,10 @@ class: image
 
 title: DRCS/SCM workflow
 subtitle: Doing it right?
-content-class: image
+class: Big nobackground fill
 
-![Gitflow](images/gitflow.png)
+![Gitflow](images/gitflow-w.png)
+ <footer class="source">source Vincent Driessen's branching model: http://nvie.com/posts/a-successful-git-branching-model/</footer>
 
 ---
 
