@@ -220,7 +220,13 @@ title: Grunt
 subtitle: Build, preview and test your project
 class: columns-2
 
+Basically; Grunt is a JavaScript task runner which you can think of as Ant for JavaScript.
+ It has a <a href="http://gruntjs.com/plugins">vast</a> ecosystem of predefined tasks, <a href="https://github.com/gruntjs/grunt-contrib">some</a> of which are maintained by the core team and many contributed by the community
+
 ![ Algo ](images/grunt.png)
+
+<footer class="source">source: http://addyosmani.com/blog/making-maven-grunt/</footer>
+
 
 ---
 
@@ -396,6 +402,20 @@ build_lists: true
 title: Shipping
 class: image
 ![ Algo ](shipping.png)
+
+---
+
+title: What about Gradle??
+class: columns-2
+
+The quick and dirty way of doing it would just be to either hard code some grunt.execute().text ...
+<pre class="prettyprint" data-lang="groovy">
+task requirejs(type: Exec) {
+    commandLine 'grunt', 'requirejs'
+}
+</pre>
+
+![ Algo ](images/bower-logo.png)
 
 ---
 
