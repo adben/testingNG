@@ -1,19 +1,15 @@
 
-title: Frontend Ecosystem
-subtitle:
-content_class: image
+class: fill
 
 ![hipster ecosystem](images/frontend-eco1.png)
-<footer class="source">source: http://decodize.com/</footer>
+<footer class="source">Frontend Ecosystem source: http://decodize.com/</footer>
 
 ---
 
-title: Frontend Ecosystem
-subtitle:
-content_class: image
+class: fill
 
 ![hipster ecosystem](images/frontend-eco2.png)
-<footer class="source">source: http://decodize.com/</footer>
+<footer class="source">Frontend Ecosystem source: http://decodize.com/</footer>
 
 ---
 
