@@ -81,14 +81,13 @@ Backend : Using maven archetypes!
 title: True story!
 conten_class: smaller
 
-<pre class="prettyprint" data-lang="java">
+<pre class="prettyprint" lang-java data-lang="XX.java">
 public static final String DATE_PATTERN = "dd-mm-yyy";
 ....
 final DateFormat format = new SimpleDateFormat(DATE_PATTERN);
 </pre>
 
-Test:
-<pre class="prettyprint" data-lang="java">
+<pre class="prettyprint" lang-java data-lang="XXTest.java">
 @Before
 public void setUp() throws Exception {
 validDate = "10-04-2004";
@@ -105,14 +104,13 @@ assertEquals(xmlGregorianCalendar.getDay(), 10);
 title: :-S
 content-class: smaller
 
-<pre class="prettyprint" data-lang="java">
+<pre class="prettyprint" lang-java data-lang="XX.java">
 public static final String DATE_PATTERN = "dd-MM-yyy";
 ....
 final DateFormat format = new SimpleDateFormat(DATE_PATTERN);
 </pre>
 
-Test:
-<pre class="prettyprint" data-lang="java">
+<pre class="prettyprint" lang-java data-lang="XXTest.java">
 @Before
 public void setUp() throws Exception {
 validDate = "10-04-2004";
