@@ -124,6 +124,14 @@ assertEquals(2004, xmlGregorianCalendar.getYear());}
 
 title: TDD
 subtitle: Java ecosystem
+content-class: image
+
+![TDD cycle](images/tdd-cycle.png)
+
+---
+
+title: TDD
+subtitle: Java ecosystem
 content-class: smaller
 
 <table>
@@ -201,13 +209,38 @@ subtitle: Scaffolds out a new application
 class: columns-2
 build_lists: true
 
-- generator angular
-- generator
-- generator
-- generator
-- generator
+- Installation
+<pre class="prettyprint" lang-sh data-lang="$">
+npm install -g yo
+npm install -g generator-webapp
+npm install -g generator-angular
+</pre>
+- Usage (with the AngularJS generator):
+<pre class="prettyprint" lang-sh data-lang="$">
+yo angular
+bower install angular-ui
+grunt test
+grunt server
+grunt
+</pre>
+
+class: note
+installation
+ # install Grunt and Bower
+ # install basic webapp generator
+ # install AngularJS generator
+ usage
+  # scaffold out a AngularJS project
+  # install a dependency for your project from Bower
+  # test your app
+  # preview your app
+  # build the application for deployment
 
 ![ Algo ](images/yeoman-logo.png)
+
+Writes our Grunt configuration, pulling it in relevant Grunt tasks that we need for our build.
+
+<footer class="source">source: http://yeoman.io</footer>
 
 ---
 
