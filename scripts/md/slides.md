@@ -267,17 +267,17 @@ npm install -g bower
 Usage:
 <pre class="prettyprint" lang-sh data-lang="$">
 echo "alias bower='noglob bower'" >> ~/.zshrc
-bower install angular-ui
 &#35; Using the dependencies listed in the current
 &#35;  directory's bower.json
 bower install
 &#35; Using a local or remote package
-bower install <package>
+bower install &lt;package&gt;
+bower install angular-ui
 &#35; Using a specific version of a package
-bower install <package>&#35;<version>
+bower install &lt;package&gt;#&lt;version&gt;
 &#35; Using a different name and a specific version
 &#35;  of a package
-bower install <name>=<package>&#35;<version>
+bower install &lt;name&gt;=&lt;package&gt;#&lt;version&gt;
 </pre>
 
 ![ Algo ](images/bower-logo.png)
