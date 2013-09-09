@@ -291,7 +291,7 @@ class: center
 
 Frontend dev. with Yeoman
 
-![ Algo ](images/yeoman)
+![ Algo ](images/yeoman-workflow.jpg)
 
 ---
 
