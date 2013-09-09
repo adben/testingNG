@@ -233,12 +233,12 @@ title: Grunt
 subtitle: Build, preview and test your project
 class: columns-2
 content_class: smaller
-build_lists: false
 
 <p>Basically; Grunt is a JavaScript task runner which you can think of as Ant for JavaScript.
  It has a <a href="http://gruntjs.com/plugins">vast</a> ecosystem of predefined tasks, <a href="https://github.com/gruntjs/grunt-contrib">some</a> of which are maintained by the core team and many contributed by the community.</p>
 Installation
 <pre class="prettyprint" lang-sh data-lang="$">
+&#35; already installed with Yo
 npm install -g grunt-cli
 </pre>
 Usage (with the AngularJS generator):
@@ -252,6 +252,36 @@ grunt
 
 <footer class="source">source: http://addyosmani.com/blog/making-maven-grunt/</footer>
 
+---
+
+title: Bower
+subtitle: dependency management
+class: columns-2 smaller
+content_class: smaller
+
+<pre class="prettyprint" lang-sh data-lang="$">
+&#35; already installed with Yo
+npm install -g bower
+</pre>
+<br>
+Usage:
+<pre class="prettyprint" lang-sh data-lang="$">
+echo "alias bower='noglob bower'" >> ~/.zshrc
+bower install angular-ui
+&#35; Using the dependencies listed in the current
+&#35;  directory's bower.json
+bower install
+&#35; Using a local or remote package
+bower install <package>
+&#35; Using a specific version of a package
+bower install <package>&#35;<version>
+&#35; Using a different name and a specific version
+&#35;  of a package
+bower install <name>=<package>&#35;<version>
+</pre>
+
+![ Algo ](images/bower-logo.png)
+<footer class="source">source: http://bower.io</footer>
 
 ---
 
@@ -352,14 +382,6 @@ subtitle: in JS..
 content-class: image
 
 ![ Algo ](images/frontend-tdd.png)
-
----
-
-title: Bower
-subtitle: dependency management
-content-class: image
-
-![ Algo ](images/bower-logo.png)
 
 ---
 
