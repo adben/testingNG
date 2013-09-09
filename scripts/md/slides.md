@@ -224,18 +224,6 @@ grunt server
 grunt
 </pre>
 
-class: note
-installation
- # install Grunt and Bower
- # install basic webapp generator
- # install AngularJS generator
- usage
-  # scaffold out a AngularJS project
-  # install a dependency for your project from Bower
-  # test your app
-  # preview your app
-  # build the application for deployment
-
 ![ Algo ](images/yeoman-logo.png)
 
 Writes our Grunt configuration, pulling it in relevant Grunt tasks that we need for our build.
