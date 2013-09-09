@@ -232,9 +232,21 @@ Writes our Grunt configuration, pulling it in relevant Grunt tasks that we need 
 title: Grunt
 subtitle: Build, preview and test your project
 class: columns-2
+content_class: smaller
+build_lists: false
 
-Basically; Grunt is a JavaScript task runner which you can think of as Ant for JavaScript.
- It has a <a href="http://gruntjs.com/plugins">vast</a> ecosystem of predefined tasks, <a href="https://github.com/gruntjs/grunt-contrib">some</a> of which are maintained by the core team and many contributed by the community
+<p>Basically; Grunt is a JavaScript task runner which you can think of as Ant for JavaScript.
+ It has a <a href="http://gruntjs.com/plugins">vast</a> ecosystem of predefined tasks, <a href="https://github.com/gruntjs/grunt-contrib">some</a> of which are maintained by the core team and many contributed by the community.</p>
+Installation
+<pre class="prettyprint" lang-sh data-lang="$">
+npm install -g grunt-cli
+</pre>
+Usage (with the AngularJS generator):
+<pre class="prettyprint" lang-sh data-lang="$">
+grunt test
+grunt server
+grunt
+</pre>
 
 ![ Algo ](images/grunt.png)
 
