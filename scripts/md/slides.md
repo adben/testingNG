@@ -215,13 +215,10 @@ npm install -g yo
 npm install -g generator-webapp
 npm install -g generator-angular
 </pre>
-- Usage (with the AngularJS generator):
+<br>
+- Usage (with AngularJS generator):
 <pre class="prettyprint" lang-sh data-lang="$">
 yo angular
-bower install angular-ui
-grunt test
-grunt server
-grunt
 </pre>
 
 ![ Algo ](images/yeoman-logo.png)
