@@ -259,8 +259,9 @@ title: Demo Project
 subtitle: part 2
 class: center
 
-Backend : Frontend dev. with Yeoman!
-![ Algo ](images/yeoman.webp)
+Frontend dev. with Yeoman
+
+![ Algo ](images/yeoman)
 
 ---
 
