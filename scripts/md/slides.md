@@ -122,11 +122,9 @@ assertEquals(2004, xmlGregorianCalendar.getYear());}
 
 ---
 
-title: TDD
-subtitle: Java ecosystem
-content-class: image
+class: fill
 
-![TDD cycle](images/tdd-cycle.png)
+![TDD cycle](images/tdd_flow.gif)
 
 ---
 
