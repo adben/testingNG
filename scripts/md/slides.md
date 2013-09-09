@@ -122,9 +122,11 @@ assertEquals(2004, xmlGregorianCalendar.getYear());}
 
 ---
 
-class: fill
+content_class: image
 
 ![TDD cycle](images/tdd_flow.gif)
+
+<footer class="source">source: http://diogoosorio.com</footer>
 
 ---
 
