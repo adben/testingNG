@@ -602,18 +602,98 @@ We can integrate <a href="http://www.eclipse.org/jetty/">Jetty</a> as well:
 ---
 
 title: Releasing
-class: big
-build_lists: true
+content_class: smaller
 
-- Bullet1
-- Bullet2
-- Bullet3
+<pre class="prettyprint" lang-xml data-lang="pom.xml">
+&lt;plugin&gt;
+        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+        &lt;artifactId&gt;maven-release-plugin&lt;/artifactId&gt;
+        &lt;version&gt;${maven-release-plugin.version}&lt;/version&gt;
+        &lt;configuration&gt;
+          &lt;autoVersionSubmodules&gt;true&lt;/autoVersionSubmodules&gt;
+          &lt;goals&gt;deploy&lt;/goals&gt;
+          &lt;pushChanges&gt;false&lt;/pushChanges&gt;
+          &lt;localCheckout&gt;true&lt;/localCheckout&gt;
+          &lt;tagNameFormat&gt;v@{project.version}&lt;/tagNameFormat&gt;
+        &lt;/configuration&gt;
+&lt;/plugin&gt;
+</pre>
+
+<pre class="prettyprint" lang-xml data-lang="pom.xml">
+&lt;scm&gt;
+&#160;&#160;&lt;connection&gt;scm:git:https://xxx/xxx.git&lt;/connection&gt;
+&#160;&#160;&lt;developerConnection&gt;scm:git:https://xxx/xxx.git&lt;/developerConnection&gt;
+&#160;&#160;&lt;url&gt;https://xxx/xxx.git&lt;/url&gt;
+&lt;/scm&gt;
+</pre>
 
 ---
 
-title: Shipping
-class: image
-![ Algo ](shipping.png)
+title: Releasing
+subtitle: With pure git (git flow)
+class: smaller
+content_class: smaller
+
+<pre class="prettyprint" lang-sh data-lang="$">
+git checkout develop
+git branch Version_1.0
+git checkout Version_1.0
+mvn release:prepare -B
+mvn release:clean
+mvn release:prepare release:perform -B
+git tag -d v-1.0
+git checkout master
+git fetch origin master
+git merge –no-ff Version_1.0
+git tag -a Version_1.0
+git push origin master
+git checkout develop
+git fetch origin develop
+git merge –no-ff Version_1.0
+git push origin develop
+git branch –d Version_1.0
+</pre>
+
+---
+
+title: Releasing
+subtitle: With git-flow
+
+<pre class="prettyprint" lang-sh data-lang="$">
+git checkout develop
+git flow release start v-1.0
+mvn release:prepare -B
+mvn release:clean
+mvn release:prepare release:perform -B
+git tag -d v-1.0
+git flow release finish -p 1.0
+</pre>
+
+---
+
+title: Releasing
+subtitle: With jgitflow
+
+<pre class="prettyprint" lang-sh data-lang="$">
+git checkout develop
+mvn clean jgitflow:release-start
+mvn jgitflow:release-finish
+</pre>
+
+<pre class="prettyprint" lang-xml data-lang="pom.xml">
+&lt;build&gt;
+    &lt;plugins&gt;
+        &lt;plugin&gt;
+            &lt;groupId&gt;com.atlassian.maven.plugins&lt;/groupId&gt;
+            &lt;artifactId&gt;maven-jgitflow-plugin&lt;/artifactId&gt;
+            &lt;version&gt;1.0-alpha20&lt;/version&gt;
+            &lt;configuration&gt;
+                &lt;!-- see goals wiki page for configuration options --&gt;
+            &lt;/configuration&gt;
+        &lt;/plugin&gt;
+    &lt;/plugins&gt;
+&lt;/build&gt;
+</pre>
 
 ---
 
