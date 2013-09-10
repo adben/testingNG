@@ -429,18 +429,24 @@ class: image
 
 ---
 
-title: Current Web Tooling
-subtitle: Bred Victor's dream
-class: image
+<iframe width="350" height="3500" src="//www.youtube.com/embed/wxWM4t68cR4?HD=1;rel=0;showinfo=0;controls=1" frameborder="0" allowfullscreen></iframe>
 
-![web tooling](chrome-dev-tools.png)
+<footer class="source">source Bret Victor's Inventing on Principle (13'30) : https://www.youtube.com/watch?v=wxWM4t68cR4</footer>
 
 ---
 
 title: Yeoman's dist
 class: image
+build_lists: true
 
-![web tooling](yeoman-dist.png)
+- Recompiling all CoffeeScript and SASS files for production
+- Using r.js to compile and optimize any AMD modules
+- Concatenation and minification of scripts and stylesheets
+- Compressing your images using OptiPNG for PNG files and JPEGtran-turbo for JPEGs
+- Creating an Application Cache manifest via Confess.js
+- Using revision filenames or oldernames
+
+<footer class="source">source https://github.com/yeoman/yeoman/wiki/yeoman-build</footer>
 
 ---
 
