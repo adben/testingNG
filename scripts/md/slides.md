@@ -135,7 +135,7 @@ assertEquals(2004, xmlGregorianCalendar.getYear());}
 
 ---
 
-content_class: image
+content_class: flexbox vcenter
 
 ![TDD cycle](images/tdd_flow.gif)
 
