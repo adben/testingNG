@@ -21,7 +21,6 @@ var SLIDE_CONFIG = {
   presenters: [{
     name: 'Adolfo Benedetti',
     company: 'Web Developer, iPROFS',
-    gplus: 'http://plus.google.com/1234567890',
     twitter: '@adben',
     www: 'http://www.iprofs.nl',
     github: 'http://github.com/adben'
