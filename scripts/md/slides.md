@@ -422,10 +422,10 @@ content_class: flexbox vcenter
 ---
 
 title: Debugging AngularJS
-subtitle: Hardcore vs Batarang
+subtitle:  Batarang
 class: image
 
-![Hardcore vs Batarang](image.png)
+![Batarang](images/model-tree.png)
 
 ---
 
