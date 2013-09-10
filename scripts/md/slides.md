@@ -490,7 +490,7 @@ Declare the plugin:
   &lt;/plugin&gt;
 </pre>
 
-<footer class="source">source is Osmani of course!: https://raw.github.com/trecloux/yeoman-maven-plugin/master/src/main/java/com/github/trecloux/yeoman/YeomanMojo.java</footer>
+<footer class="source">source: https://raw.github.com/trecloux/yeoman-maven-plugin/master/src/main/java/com/github/trecloux/yeoman/YeomanMojo.java</footer>
 
 ---
 
