@@ -57,7 +57,20 @@ class: segue dark nobackground
 
 title:  Maven
 subtitle:  Build manager for Java projects
-class:
+content_class: flexbox vcenter
+
+![maven](images/maven_cycle.jpg)
+
+ <footer class="source">source http://books.sonatype.com/mvnref-book/reference/public-book.html</footer>
+
+---
+
+title:  Maven
+content_class: flexbox vcenter
+
+![Maven](images/maven_cycle2.png)
+
+ <footer class="source">source http://books.sonatype.com/mvnref-book/reference/public-book.html</footer>
 
 ---
 
