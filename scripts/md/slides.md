@@ -461,7 +461,7 @@ title: Maven and Yo/Grunt :  yeoman-maven-plugin
 
 Declare the plugin:
 
-<pre class="prettyprint" data-lang="xml">
+<pre class="prettyprint" lang-xml data-lang="pom.xml">
 &lt;plugin&gt;
       &lt;groupId&gt;com.github.trecloux&lt;/groupId&gt;
       &lt;artifactId&gt;yeoman-maven-plugin&lt;/artifactId&gt;
