@@ -13,13 +13,6 @@ class: fill
 
 ---
 
-title: Backend (Java) Ecosystem
-class: image
-
-![java ecosystem](gitflow-w.png)
-
----
-
 title: Agenda
 class: big
 build_lists: true
@@ -414,7 +407,7 @@ content_class: flexbox vcenter
 ---
 
 title: PhantomJS and SlimerJS
-class: image
+content_class: flexbox vcenter
 
 ![ Algo ](phantomjs.png)
 
@@ -425,6 +418,7 @@ subtitle: Hardcore vs Batarang
 class: image
 
 ![Hardcore vs Batarang](image.png)
+
 ---
 
 title: Current Web Tooling
