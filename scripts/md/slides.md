@@ -400,9 +400,16 @@ content-class: image
 
 title: Protractor
 subtitle: just for AngularJS
-class: image
+content_class: flexbox vcenter
 
-![ Algo ](protractor.png)
+![ Protractor ](images/protractor.png)
+
+---
+
+title: Protractor
+content_class: flexbox vcenter
+
+![ Protractor ](images/protractor2.png)
 
 ---
 
