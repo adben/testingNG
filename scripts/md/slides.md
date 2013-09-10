@@ -28,11 +28,6 @@ Things we'll (try to) cover;
 
 ---
 
-title:  Demo Overview
-class: image
-
----
-
 title: DRCS/SCM workflow
 subtitle: Doing it right?
 class: Big nobackground fill
