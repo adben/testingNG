@@ -613,7 +613,7 @@ task requirejs(type: Exec) {
 }
 </pre>
 
-![ Algo ](images/bower-logo.png)
+![ Gradle ](images/gradle-icon-512x512.png)
 
 <footer class="source">source: http://naleid.com/blog/2013/01/24/calling-gruntjs-tasks-from-gradle/</footer>
 
@@ -626,58 +626,3 @@ build_lists: true
 - New web development Architecture demands a better back-end and front-end integration
 - Other Conclusions? you gotta be kidding me!
 - JS-Java live in perpetual work in progress
-
----
-
-title: Today
-class: nobackground fill
-
-![Many kinds of devices.](image.png)
-
-<footer class="source">source: place source info here</footer>
-
----
-
-title: Big Title Slide
-class: title-slide
-
----
-
-title: Code Example
-
-Media Queries are sweet:
-
-<pre class="prettyprint" data-lang="css">
-@media screen and (max-width: 640px) {
-  #sidebar { display: none; }
-}
-</pre>
-
----
-
-title: Once more, with JavaScript
-
-<pre class="prettyprint" data-lang="java">
-function isSmall() {
-  return window.matchMedia("(min-device-width: ???)").matches;
-}
-
-function hasTouch() {
-  return Modernizr.touch;
-}
-
-function detectFormFactor() {
-  var device = DESKTOP;
-  if (hasTouch()) {
-    device = isSmall() ? PHONE : TABLET;
-  }
-  return device;
-}
-</pre>
-
----
-
-title: Centered content
-content_class: flexbox vcenter
-
-This content should be centered!
