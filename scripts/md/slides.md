@@ -490,6 +490,8 @@ Declare the plugin:
   &lt;/plugin&gt;
 </pre>
 
+<footer class="source">source is Osmani of course!: https://raw.github.com/trecloux/yeoman-maven-plugin/master/src/main/java/com/github/trecloux/yeoman/YeomanMojo.java</footer>
+
 ---
 
 title: Maven and Yo : maven-war-plugin
@@ -694,6 +696,8 @@ mvn jgitflow:release-finish
     &lt;/plugins&gt;
 &lt;/build&gt;
 </pre>
+
+<footer class="source">source: https://blogs.atlassian.com/2013/05/maven-git-flow-plugin-for-better-releases/</footer>
 
 ---
 
