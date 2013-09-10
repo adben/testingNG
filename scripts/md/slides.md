@@ -545,7 +545,7 @@ And clean the generated directories:
 title: Maven and Bower : exec-maven-plugin
 content_class: smaller
 
-And clean the generated directories:
+Gerbrand van Dieijen's Bower-maven Dependency management :
 
 <pre class="prettyprint" lang-xml data-lang="pom.xml">
 &lt;plugin&gt;
