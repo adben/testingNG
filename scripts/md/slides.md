@@ -59,7 +59,20 @@ content_class: flexbox vcenter
 ---
 
 title:  Maven
-content_class: flexbox vcenter
+subtitle:  Build manager for Java projects
+class: columns-2
+build_lists: true
+
+Maven provides developers ways to manage :
+
+- Builds
+- Documentation
+- Reporting
+- Dependencies
+- SCMs
+- Releases
+- Distribution
+- mailing list
 
 ![Maven](images/maven_cycle2.png)
 
