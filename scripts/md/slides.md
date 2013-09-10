@@ -623,6 +623,6 @@ title: Conclusions ??
 class: generators
 build_lists: true
 
-- New web development Architecture demands a better back-end and front-end integration
-- Other Conclusions? you gotta be kidding me!
-- JS-Java live in perpetual work in progress
+- The new web development Architecture demands a better back-end and front-end integration.
+- On projects where the front-end and back-end are somewhat coupled, using Maven as our primary build system with binaries like Grunt and Bower called out as needed is completely feasible.
+- For new projects, keeping these two pieces distinctly separate comes with the flexibility to use whatever tooling chain you want, including just using Grunt for your front-end.
