@@ -19,25 +19,13 @@ build_lists: true
 
 Things we'll (try to) cover;
 
-- Maven
-- Yeoman
-- Grunt
-- Bower
 - TDD
-- Repository workflow
+- Karma
+- Protractor
 
 ---
 
-title: DRCS/SCM workflow
-subtitle: Doing it right?
-class: Big nobackground fill
-
-![Gitflow](images/gitflow-w.png)
- <footer class="source">source Vincent Driessen's branching model: http://nvie.com/posts/a-successful-git-branching-model/</footer>
-
----
-
-title: Maven
+title: TDD
 subtitle:
 class: segue dark nobackground
 
