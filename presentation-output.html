@@ -1,0 +1,1039 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahe <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!--
+Iprofs 2013 HTML5 Slide Template
+
+Authors: Adolfo Benedetti <abenedetti@iprof.nl>
+         Raymond Uphoff <ruphoff@iprofs.nl>
+
+URL: http://www.iprofs.nl
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google IO 2012</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!--This one seems to work all the time, but really small on ipad-->
+    <!--<meta name="viewport" content="initial-scale=0.4">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" media="all" href="theme/css/default.css">
+    <link rel="stylesheet" media="all" href="theme/css/app.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+    <base target="_blank">
+    <!-- This amazingness opens all links in a new tab. -->
+    <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+    <slide class="logoslide nobackground">
+        <article class="flexbox vcenter">
+            <span><img src="images/iprofs-logo-400x109.png"></span>
+        </article>
+    </slide>
+
+
+    <slide class="title-slide segue nobackground">
+        <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+        <hgroup class="auto-fadein">
+            <h1 data-config-title><!-- populated from slide_config.json --></h1>
+
+            <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+
+            <p data-config-presenter><!-- populated from slide_config.json --></p>
+        </hgroup>
+    </slide>
+
+    
+    <slide
+    class="fill" >
+    
+    <hgroup>
+        <h2></h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><p><img alt="hipster ecosystem" src="images/frontend-eco1.png" />
+<footer class="source">Frontend Ecosystem source: http://decodize.com/</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="fill" >
+    
+    <hgroup>
+        <h2></h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><p><img alt="hipster ecosystem" src="images/frontend-eco2.png" />
+<footer class="source">Frontend Ecosystem source: http://decodize.com/</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Agenda</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><p>Things we'll (try to) cover;</p>
+<ul class="build">
+<li>Maven</li>
+<li>Yeoman</li>
+<li>Grunt</li>
+<li>Bower</li>
+<li>TDD</li>
+<li>Repository workflow</li>
+</ul></article>
+    
+    </slide>
+    
+    <slide
+    class="Big nobackground fill" >
+    
+    <hgroup>
+        <h2>DRCS/SCM workflow</h2>
+
+        <h3>Doing it right?</h3>
+    </hgroup>
+    <article
+    ><p><img alt="Gitflow" src="images/gitflow-w.png" />
+ <footer class="source">source Vincent Driessen's branching model: http://nvie.com/posts/a-successful-git-branching-model/</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="segue dark nobackground" >
+    
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+        <h2>Maven</h2>
+
+        <h3></h3>
+    </hgroup>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>Maven</h2>
+
+        <h3>Build manager for Java projects</h3>
+    </hgroup>
+    <article
+    class="flexbox vcenter"><p><img alt="maven" src="images/maven_cycle.jpg" /></p>
+<p><footer class="source">source http://books.sonatype.com/mvnref-book/reference/public-book.html</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="columns-2" >
+    
+    <hgroup>
+        <h2>Maven</h2>
+
+        <h3>Build manager for Java projects</h3>
+    </hgroup>
+    <article
+    ><p>Maven provides developers ways to manage :</p>
+<ul class="build">
+<li>Builds</li>
+<li>Documentation</li>
+<li>Reporting</li>
+<li>Dependencies</li>
+<li>SCMs</li>
+<li>Releases</li>
+<li>Distribution</li>
+<li>mailing list</li>
+</ul>
+<p><img alt="Maven" src="images/maven_cycle2.png" /></p>
+<p><footer class="source">source http://books.sonatype.com/mvnref-book/reference/public-book.html</footer></p></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>Demo Project</h2>
+
+        <h3>part 1</h3>
+    </hgroup>
+    <article
+    class="flexbox vcenter"><p>Backend : Using maven archetypes!</p></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2></h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><iframe width="420" height="420" src="//www.youtube.com/embed/2tRo4jVCnIM?HD=1;rel=0;showinfo=0;controls=0" frameborder="0" allowfullscreen></iframe>
+
+<footer class="source">source: https://www.youtube.com/watch?v=2tRo4jVCnIM</footer></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>True story!</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-java data-lang="XX.java">
+public static final String DATE_PATTERN = "dd-mm-yyy";
+....
+final DateFormat format = new SimpleDateFormat(DATE_PATTERN);
+</pre>
+
+<pre class="prettyprint" lang-java data-lang="XXTest.java">
+@Before
+public void setUp() throws Exception {
+validDate = "10-04-2004";
+}
+@Test
+public void testValidGregorianDate() throws Exception {
+....
+assertEquals(xmlGregorianCalendar.getDay(), 10);
+}
+</pre></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>:-S</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-java data-lang="XX.java">
+public static final String DATE_PATTERN = "dd-MM-yyy";
+....
+final DateFormat format = new SimpleDateFormat(DATE_PATTERN);
+</pre>
+
+<pre class="prettyprint" lang-java data-lang="XXTest.java">
+@Before
+public void setUp() throws Exception {
+validDate = "10-04-2004";
+}
+@Test
+public void testValidGregorianDate() throws Exception {
+....
+assertEquals(10, xmlGregorianCalendar.getDay());
+assertEquals(4, xmlGregorianCalendar.getMonth());
+assertEquals(2004, xmlGregorianCalendar.getYear());}
+</pre></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2></h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    class="flexbox vcenter"><p><img alt="TDD cycle" src="images/tdd_flow.gif" /></p>
+<footer class="source">source: http://diogoosorio.com</footer></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>TDD</h2>
+
+        <h3>Java ecosystem</h3>
+    </hgroup>
+    <article
+    ><table>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td>JMockit</td>
+        <td>JTiger</td>
+        <td>SpryTest</td>
+        <td>Jtest</td>
+        <td class="highlight">JUnit</td>
+        <td>JWalk</td>
+        <td class="highlight">TestNG</td>
+        <td>Needle</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>NUTester</td>
+        <td>Concordion</td>
+        <td>JExample</td>
+        <td>DbUnit</td>
+        <td>JUnitEE</td>
+        <td>Cactus</td>
+        <td>JSST</td>
+        <td>GroboUtils</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Mockrunner</td>
+        <td>Unitils</td>
+        <td>JBehave</td>
+        <td>Instinct</td>
+        <td>JDave</td>
+        <td>beanSpec</td>
+        <td>Cucumber-JVM</td>
+        <td>XMLUnit</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>EasyMock</td>
+        <td>JMock</td>
+        <td class="highlight">Mockito</td>
+        <td>Concutest</td>
+        <td>SureAssert</td>
+        <td>PowerMock</td>
+        <td>Jukito</td>
+        <td>GrandTestAuto</td>
+    </tr>
+</table>
+
+<footer class="source">source: https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#Java</footer></article>
+    
+    </slide>
+    
+    <slide
+    class="segue dark nobackground" >
+    
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+        <h2>Yeoman, Grunt and Bower</h2>
+
+        <h3>Frontend Workflow</h3>
+    </hgroup>
+    
+    </slide>
+    
+    <slide
+    class="columns-2" >
+    
+    <hgroup>
+        <h2>Yeoman</h2>
+
+        <h3>Scaffolds out a new application</h3>
+    </hgroup>
+    <article
+    ><ul class="build">
+<li>Installation
+<pre class="prettyprint" lang-sh data-lang="$">
+npm install -g yo
+npm install -g generator-webapp
+npm install -g generator-angular
+</pre>
+<br></li>
+<li>Usage (with AngularJS generator):
+<pre class="prettyprint" lang-sh data-lang="$">
+yo angular
+</pre></li>
+</ul>
+<p><img alt=" Algo " src="images/yeoman-logo.png" /></p>
+<p>Writes our Grunt configuration, pulling it in relevant Grunt tasks that we need for our build.</p>
+<footer class="source">source: http://yeoman.io</footer></article>
+    
+    </slide>
+    
+    <slide
+    class="columns-2" >
+    
+    <hgroup>
+        <h2>Grunt</h2>
+
+        <h3>Build, preview and test your project</h3>
+    </hgroup>
+    <article
+    class="smaller"><p>Basically; Grunt is a JavaScript task runner which you can think of as Ant for JavaScript.
+ It has a <a href="http://gruntjs.com/plugins">vast</a> ecosystem of predefined tasks, <a href="https://github.com/gruntjs/grunt-contrib">some</a> of which are maintained by the core team and many contributed by the community.</p>
+
+<p>Installation
+<pre class="prettyprint" lang-sh data-lang="$">
+&#35; already installed with Yo
+npm install -g grunt-cli
+</pre>
+Usage (with the AngularJS generator):
+<pre class="prettyprint" lang-sh data-lang="$">
+grunt test
+grunt server
+grunt
+</pre></p>
+<p><img alt=" Algo " src="images/grunt.png" /></p>
+<footer class="source">source: http://addyosmani.com/blog/making-maven-grunt/</footer></article>
+    
+    </slide>
+    
+    <slide
+    class="columns-2 smaller" >
+    
+    <hgroup>
+        <h2>Bower</h2>
+
+        <h3>dependency management</h3>
+    </hgroup>
+    <article
+    class="smaller"><pre class="prettyprint" lang-sh data-lang="$">
+&#35; already installed with Yo
+npm install -g bower
+</pre>
+
+<p><br>
+Usage:
+<pre class="prettyprint" lang-sh data-lang="$">
+echo "alias bower='noglob bower'" &gt;&gt; ~/.zshrc
+&#35; Using the dependencies listed in the current
+&#35;  directory's bower.json
+bower install
+&#35; Using a local or remote package
+bower install &lt;package&gt;
+bower install angular-ui
+&#35; Using a specific version of a package
+bower install &lt;package&gt;#&lt;version&gt;
+&#35; Using a different name and a specific version
+&#35;  of a package
+bower install &lt;name&gt;=&lt;package&gt;#&lt;version&gt;
+</pre></p>
+<p><img alt=" Algo " src="images/bower-logo.png" />
+<footer class="source">source: http://bower.io</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="center" >
+    
+    <hgroup>
+        <h2>Demo Project</h2>
+
+        <h3>part 2</h3>
+    </hgroup>
+    <article
+    ><p>Frontend dev. with Yeoman</p>
+<p><img alt=" Algo " src="images/yeoman-workflow.jpg" /></p></article>
+    
+    </slide>
+    
+    <slide
+    class="nobackground fill" style="background-image: url(images/framvslib.png)">
+    
+    <hgroup>
+        <h2></h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><footer class="source white">http://merrickchristensen.com/articles/learn-js/mvstar-libraries-and-frameworks.html</footer></article>
+    
+    </slide>
+    
+    <slide
+    class="smaller" >
+    
+    <hgroup>
+        <h2>TDD again!</h2>
+
+        <h3>Ecosystem in JS..</h3>
+    </hgroup>
+    <article
+    ><table>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Suitest</td>
+        <td>DOH</td>
+        <td>LBRTW UT</td>
+        <td>JSUnit</td>
+        <td>Enhance JS</td>
+        <td>QUnit</td>
+        <td>RhUnit</td>
+        <td>Crosscheck</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>J3Unit</td>
+        <td>Mocha</td>
+        <td>intern</td>
+        <td>JSNUnit</td>
+        <td>YUI Test</td>
+        <td>JSSpec</td>
+        <td>UnitTesting</td>
+        <td>JSpec</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Jasmine</td>
+        <td>screw-unit</td>
+        <td>Test.Simple</td>
+        <td>Test.More</td>
+        <td>TestCase</td>
+        <td>TestIt</td>
+        <td>jsUnitTest</td>
+        <td>JSTest</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>JSTest.NET</td>
+        <td>jsUnity</td>
+        <td>RhinoUnit</td>
+        <td>JasUnit</td>
+        <td>FireUnit</td>
+        <td>Js-test-driver</td>
+        <td>Js-test-runner</td>
+        <td>Sinon.js</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>SOAtest</td>
+        <td>Vows</td>
+        <td>Nodeunit</td>
+        <td>Tyrtle</td>
+        <td>wru</td>
+        <td>Buster.JS</td>
+</table>
+
+<footer class="source">source: https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#JavaScript</footer></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>TDD again!</h2>
+
+        <h3>in JS..</h3>
+    </hgroup>
+    <article
+    ><p><img alt=" Algo " src="images/frontend-tdd.png" /></p></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>Protractor</h2>
+
+        <h3>just for AngularJS</h3>
+    </hgroup>
+    <article
+    class="flexbox vcenter"><p><img alt=" Protractor " src="images/protractor.png" /></p></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>Protractor</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    class="flexbox vcenter"><p><img alt=" Protractor " src="images/protractor2.png" /></p></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>PhantomJS and SlimerJS</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    class="flexbox vcenter"><p><img alt=" Algo " src="phantomjs.png" /></p></article>
+    
+    </slide>
+    
+    <slide
+    class="image" >
+    
+    <hgroup>
+        <h2>Debugging AngularJS</h2>
+
+        <h3>Batarang</h3>
+    </hgroup>
+    <article
+    ><p><img alt="Batarang" src="images/model-tree.png" /></p></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2></h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><iframe width="350" height="3500" src="//www.youtube.com/embed/wxWM4t68cR4?HD=1;rel=0;showinfo=0;controls=1" frameborder="0" allowfullscreen></iframe>
+
+<footer class="source">source Bret Victor's Inventing on Principle (13'30) : https://www.youtube.com/watch?v=wxWM4t68cR4</footer></article>
+    
+    </slide>
+    
+    <slide
+    class="image" >
+    
+    <hgroup>
+        <h2>Yeoman's dist</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><ul class="build">
+<li>Recompiling all CoffeeScript and SASS files for production</li>
+<li>Using r.js to compile and optimize any AMD modules</li>
+<li>Concatenation and minification of scripts and stylesheets</li>
+<li>Compressing your images using OptiPNG for PNG files and JPEGtran-turbo for JPEGs</li>
+<li>Creating an Application Cache manifest via Confess.js</li>
+<li>Using revision filenames or oldernames</li>
+</ul>
+<footer class="source">source https://github.com/yeoman/yeoman/wiki/yeoman-build</footer></article>
+    
+    </slide>
+    
+    <slide
+    class="segue dark nobackground" >
+    
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+        <h2>Maven & Yeoman</h2>
+
+        <h3></h3>
+    </hgroup>
+    
+    </slide>
+    
+    <slide
+    class="dark" >
+    
+    <hgroup>
+        <h2></h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    class="quote smaller flexbox vleft auto-fadein"><p>What are the options?</p>
+<ul class="build">
+<li><q>We don’t know how to integrate Grunt tooling into our Maven workflow. Even after setting up Node on our dev. box, there’s no documentation about using Maven with Grunt and everyone seems to want it but there are no blessed solutions out there.</q></li>
+<li>Consider your backend and front-end code as completely separate entities</li>
+<li>Ignore modern tooling altogether.</li>
+<li>Use the Maven-exec plugin to call out to Grunt from your existing build process</li>
+</ul>
+<footer class="source">source is Osmani of course!: http://addyosmani.com/blog/making-maven-grunt/</footer></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>Maven and Yo/Grunt :  yeoman-maven-plugin</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><p>Declare the plugin:</p>
+<pre class="prettyprint" lang-xml data-lang="pom.xml">
+&lt;plugin&gt;
+      &lt;groupId&gt;com.github.trecloux&lt;/groupId&gt;
+      &lt;artifactId&gt;yeoman-maven-plugin&lt;/artifactId&gt;
+      &lt;version&gt;0.1&lt;/version&gt;
+      &lt;executions&gt;
+          &lt;execution&gt;
+              &lt;goals&gt;
+                  &lt;goal&gt;build&lt;/goal&gt;
+              &lt;/goals&gt;
+          &lt;/execution&gt;
+      &lt;/executions&gt;
+  &lt;/plugin&gt;
+</pre>
+
+<footer class="source">source: https://raw.github.com/trecloux/yeoman-maven-plugin/master/src/main/java/com/github/trecloux/yeoman/YeomanMojo.java</footer></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>Maven and Yo : maven-war-plugin</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><p>Add the yeoman dist directory to our WAR file:</p>
+<pre class="prettyprint" lang-xml data-lang="pom.xml">
+&lt;plugin&gt;
+    &lt;artifactId&gt;maven-war-plugin&lt;/artifactId&gt;
+    &lt;version&gt;2.4&lt;/version&gt;
+            &lt;configuration&gt;
+        &lt;webResources&gt;
+            &lt;resource&gt;
+                &lt;directory&gt;yo/dist&lt;/directory&gt;
+            &lt;/resource&gt;
+        &lt;/webResources&gt;
+    &lt;/configuration&gt;
+&lt;/plugin&gt;
+</pre></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>Maven and Yo : maven-clean-plugin</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    class="smaller"><p>And clean the generated directories:</p>
+<pre class="prettyprint" lang-xml data-lang="pom.xml">
+&lt;plugin&gt;
+    &lt;artifactId&gt;maven-clean-plugin&lt;/artifactId&gt;
+    &lt;version&gt;2.5&lt;/version&gt;
+    &lt;configuration&gt;
+        &lt;filesets&gt;
+            &lt;fileset&gt;
+                &lt;directory&gt;yo/dist&lt;/directory&gt;
+            &lt;/fileset&gt;
+            &lt;fileset&gt;
+                &lt;directory&gt;yo/.tmp&lt;/directory&gt;
+            &lt;/fileset&gt;
+            &lt;fileset&gt;
+                &lt;directory&gt;yo/app/components&lt;/directory&gt;
+            &lt;/fileset&gt;
+            &lt;fileset&gt;
+              &lt;directory&gt;yo/node_modules&lt;/directory&gt;
+            &lt;/fileset&gt;
+        &lt;/filesets&gt;
+    &lt;/configuration&gt;
+&lt;/plugin&gt;
+</pre></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>Maven and Bower : exec-maven-plugin</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    class="smaller"><p>Gerbrand van Dieijen's Bower-maven Dependency management :</p>
+<pre class="prettyprint" lang-xml data-lang="pom.xml">
+&lt;plugin&gt;
+   &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+   &lt;artifactId&gt;exec-maven-plugin&lt;/artifactId&gt;
+   &lt;executions&gt;
+     &lt;execution&gt;
+     &lt;phase&gt;generate-sources&lt;/phase&gt;
+     &lt;goals&gt;
+      &lt;goal&gt;exec&lt;/goal&gt;
+     &lt;/goals&gt;
+     &lt;/execution&gt;
+   &lt;/executions&gt;
+   &lt;configuration&gt;
+     &lt;executable&gt;bower&lt;/executable&gt;
+     &lt;arguments&gt;
+      &lt;argument&gt;install&lt;/argument&gt;
+     &lt;/arguments&gt;
+     &lt;workingDirectory&gt;${basedir}/src/main/webapp&lt;/workingDirectory&gt;
+   &lt;/configuration&gt;
+ &lt;/plugin&gt;
+</pre>
+
+<footer class="source">source Xebia: http://blog.xebia.com/2013/06/15/maven-user-starting-with-javascript-package-management/</footer></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>What about Jetty? jetty-maven-plugin</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    class="smaller"><p>We can integrate <a href="http://www.eclipse.org/jetty/">Jetty</a> as well:</p>
+<pre class="prettyprint" lang-xml data-lang="pom.xml">
+&lt;plugin&gt;
+    &lt;groupId&gt;org.mortbay.jetty&lt;/groupId&gt;
+    &lt;artifactId&gt;jetty-maven-plugin&lt;/artifactId&gt;
+    &lt;version&gt;8.1.4.v20120524&lt;/version&gt;
+    &lt;configuration&gt;
+        &lt;stopKey&gt;foo&lt;/stopKey&gt;
+        &lt;stopPort&gt;8000&lt;/stopPort&gt;
+        &lt;reload&gt;manual&lt;/reload&gt;
+        &lt;webAppConfig&gt;
+            &lt;contextPath&gt;/${project.name}&lt;/contextPath&gt;
+            &lt;baseResource implementation=&quot;org.eclipse.jetty.util.resource.ResourceCollection&quot;&gt;
+                &lt;resourcesAsCSV&gt;src/main/webapp,yo/dist&lt;/resourcesAsCSV&gt;
+            &lt;/baseResource&gt;
+        &lt;/webAppConfig&gt;
+    &lt;/configuration&gt;
+&lt;/plugin&gt;
+</pre>
+
+<footer class="source">source: http://jpgmr.wordpress.com/2013/06/12/jetty-and-the-yeoman-maven-plugin/</footer></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>Releasing</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    class="smaller"><pre class="prettyprint" lang-xml data-lang="pom.xml">
+&lt;plugin&gt;
+        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+        &lt;artifactId&gt;maven-release-plugin&lt;/artifactId&gt;
+        &lt;version&gt;${maven-release-plugin.version}&lt;/version&gt;
+        &lt;configuration&gt;
+          &lt;autoVersionSubmodules&gt;true&lt;/autoVersionSubmodules&gt;
+          &lt;goals&gt;deploy&lt;/goals&gt;
+          &lt;pushChanges&gt;false&lt;/pushChanges&gt;
+          &lt;localCheckout&gt;true&lt;/localCheckout&gt;
+          &lt;tagNameFormat&gt;v@{project.version}&lt;/tagNameFormat&gt;
+        &lt;/configuration&gt;
+&lt;/plugin&gt;
+</pre>
+
+<pre class="prettyprint" lang-xml data-lang="pom.xml">
+&lt;scm&gt;
+&#160;&#160;&lt;connection&gt;scm:git:https://xxx/xxx.git&lt;/connection&gt;
+&#160;&#160;&lt;developerConnection&gt;scm:git:https://xxx/xxx.git&lt;/developerConnection&gt;
+&#160;&#160;&lt;url&gt;https://xxx/xxx.git&lt;/url&gt;
+&lt;/scm&gt;
+</pre></article>
+    
+    </slide>
+    
+    <slide
+    class="smaller" >
+    
+    <hgroup>
+        <h2>Releasing</h2>
+
+        <h3>With pure git (git flow)</h3>
+    </hgroup>
+    <article
+    class="smaller"><pre class="prettyprint" lang-sh data-lang="$">
+git checkout develop
+git branch Version_1.0
+git checkout Version_1.0
+mvn release:prepare -B
+mvn release:clean
+mvn release:prepare release:perform -B
+git tag -d v-1.0
+git checkout master
+git fetch origin master
+git merge –no-ff Version_1.0
+git tag -a Version_1.0
+git push origin master
+git checkout develop
+git fetch origin develop
+git merge –no-ff Version_1.0
+git push origin develop
+git branch –d Version_1.0
+</pre></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>Releasing</h2>
+
+        <h3>With git-flow</h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-sh data-lang="$">
+git checkout develop
+git flow release start v-1.0
+mvn release:prepare -B
+mvn release:clean
+mvn release:prepare release:perform -B
+git tag -d v-1.0
+git flow release finish -p 1.0
+</pre></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>Releasing</h2>
+
+        <h3>With jgitflow</h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-sh data-lang="$">
+git checkout develop
+mvn clean jgitflow:release-start
+mvn jgitflow:release-finish
+</pre>
+
+<pre class="prettyprint" lang-xml data-lang="pom.xml">
+&lt;build&gt;
+    &lt;plugins&gt;
+        &lt;plugin&gt;
+            &lt;groupId&gt;com.atlassian.maven.plugins&lt;/groupId&gt;
+            &lt;artifactId&gt;maven-jgitflow-plugin&lt;/artifactId&gt;
+            &lt;version&gt;1.0-alpha20&lt;/version&gt;
+            &lt;configuration&gt;
+                &lt;!-- see goals wiki page for configuration options --&gt;
+            &lt;/configuration&gt;
+        &lt;/plugin&gt;
+    &lt;/plugins&gt;
+&lt;/build&gt;
+</pre>
+
+<footer class="source">source: https://blogs.atlassian.com/2013/05/maven-git-flow-plugin-for-better-releases/</footer></article>
+    
+    </slide>
+    
+    <slide
+    class="columns-2" >
+    
+    <hgroup>
+        <h2>What about Gradle??</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><p>The quick and dirty way of doing it would just be to either hard code some grunt.execute().text ...
+<pre class="prettyprint" data-lang="groovy">
+task requirejs(type: Exec) {
+    commandLine 'grunt', 'requirejs'
+}
+</pre></p>
+<p><img alt=" Gradle " src="images/gradle-icon-512x512.png" /></p>
+<footer class="source">source: http://naleid.com/blog/2013/01/24/calling-gruntjs-tasks-from-gradle/</footer></article>
+    
+    </slide>
+    
+    <slide
+    class="generators" >
+    
+    <hgroup>
+        <h2>Conclusions ??</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><ul class="build">
+<li>The new web development Architecture demands a better back-end and front-end integration.</li>
+<li>On projects where the front-end and back-end are somewhat coupled, using Maven as our primary build system with binaries like Grunt and Bower called out as needed is completely feasible.</li>
+<li>For new projects, keeping these two pieces distinctly separate comes with the flexibility to use whatever tooling chain you want, including just using Grunt for your front-end.</li>
+</ul></article>
+    
+    </slide>
+    
+
+    <slide class="thank-you-slide segue nobackground">
+        <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
+        <article class="flexbox vleft auto-fadein">
+            <h2>&lt;Thank You!&gt;</h2>
+
+        </article>
+        <p class="auto-fadein" data-config-contact>
+            <!-- populated from slide_config.json -->
+        </p>
+    </slide>
+
+    <slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<!--[if IE]>
+<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+<script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
