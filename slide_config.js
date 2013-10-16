@@ -1,8 +1,8 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Testing Strategies<br> With AngularJS',
-    subtitle: 'What and how to test?',
+    title: 'Test<i>ing<i>NG',
+    subtitle: 'Testing Strategies With AngularJS',
     //eventTitle: 'Google I/O 2013',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
@@ -18,19 +18,21 @@ var SLIDE_CONFIG = {
   },
 
   // Author information
-  presenters: [{
-    name: 'Adolfo Benedetti',
-    company: 'Web Developer, iPROFS',
-    twitter: '@adben',
-    www: 'http://www.iprofs.nl',
-    github: 'http://github.com/adben'
-  }/*, {
-    name: 'Second Name',
-    company: 'Job Title, Google',
-    gplus: 'http://plus.google.com/1234567890',
-    twitter: '@yourhandle',
-    www: 'http://www.you.com',
-    github: 'http://github.com/you'
-  }*/]
+  presenters: [
+    {
+      name: 'Adolfo Benedetti',
+      company: 'Web Developer, iPROFS',
+      twitter: '@adben',
+      www: 'http://www.iprofs.nl',
+      github: 'http://github.com/adben'
+    }/*, {
+     name: 'Second Name',
+     company: 'Job Title, Google',
+     gplus: 'http://plus.google.com/1234567890',
+     twitter: '@yourhandle',
+     www: 'http://www.you.com',
+     github: 'http://github.com/you'
+     }*/
+  ]
 };
 
