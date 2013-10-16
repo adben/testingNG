@@ -20,3 +20,4 @@ else
 fi
 
 $open http://localhost:$port/workflowangularjs.html && python -m SimpleHTTPServer $port;
+                       open
