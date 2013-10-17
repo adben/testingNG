@@ -20,8 +20,8 @@ build_lists: true
 Things we'll (try to) cover;
 
 - TDD
-- Karma
-- Protractor
+- Unit Testing
+- E2E Testing
 - CI
 
 ---
