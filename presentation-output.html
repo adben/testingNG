@@ -353,6 +353,53 @@ URL: http://www.iprofs.nl
     </slide>
     
     <slide
+    class="segue dark nobackground" >
+    
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+        <h2>E2E Testing</h2>
+
+        <h3></h3>
+    </hgroup>
+    
+    </slide>
+    
+    <slide
+    class="columns-2" >
+    
+    <hgroup>
+        <h2>Promises</h2>
+
+        <h3>... or futures, deferreds</h3>
+    </hgroup>
+    <article
+    ><p>Promises are objects which represent the pending result of an asynchronous operation. You can use these to schedule further activity after the asynchronous operation has completed by supplying a callback.
+<br>
+Providing a clear interface to schedule activity with asynchronous tasks, they also compose.</p>
+<pre class="prettyprint" lang-js data-lang="Promise">
+<br>
+aPromise = someAsyncOperation();
+aPromise.done(function() {
+// runs if all went well
+});
+aPromise.fail(function() {
+// runs if something went wrong
+});
+aPromise.always(function() {
+// runs either way
+});
+</pre>
+
+<pre class="prettyprint" lang-js data-lang="Promise">
+<br>
+composedPromise = $.when(anAsyncFunction(), anotherAsyncFunction());
+</pre>
+
+<footer class="source">source: http://martinfowler.com/bliki/JavascriptPromise.html</footer></article>
+    
+    </slide>
+    
+    <slide
      >
     
     <hgroup>

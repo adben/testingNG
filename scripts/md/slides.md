@@ -234,13 +234,45 @@ Unit Testing
 
 The core units which make up features should be verified with accompanying unit tests. In JavaScript apps, the smallest units of code you can test are usually individual functions.
 
+---
+
+ title: E2E Testing
+ subtitle:
+ class: segue dark nobackground
+
+---
+
+title: Promises
+subtitle: ... or futures, deferreds
+class: columns-2
+
+Promises are objects which represent the pending result of an asynchronous operation. You can use these to schedule further activity after the asynchronous operation has completed by supplying a callback.
+<br>
+Providing a clear interface to schedule activity with asynchronous tasks, they also compose.
+
+<pre class="prettyprint" lang-js data-lang="Promise">
+<br>
+aPromise = someAsyncOperation();
+aPromise.done(function() {
+// runs if all went well
+});
+aPromise.fail(function() {
+// runs if something went wrong
+});
+aPromise.always(function() {
+// runs either way
+});
+</pre>
+<pre class="prettyprint" lang-js data-lang="Promise">
+<br>
+composedPromise = $.when(anAsyncFunction(), anotherAsyncFunction());
+</pre>
+
+<footer class="source">source: http://martinfowler.com/bliki/JavascriptPromise.html</footer>
 
 ---
 ---
-
-
 ---
-
 title: Demo Project
 subtitle: part 1
 content_class: flexbox vcenter
