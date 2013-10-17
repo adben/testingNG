@@ -32,35 +32,41 @@ class: segue dark nobackground
 
 ---
 
-title:  Maven
-subtitle:  Build manager for Java projects
-content_class: flexbox vcenter
-
-![maven](images/maven_cycle.jpg)
-
- <footer class="source">source http://books.sonatype.com/mvnref-book/reference/public-book.html</footer>
-
----
-
-title:  Maven
-subtitle:  Build manager for Java projects
+title:  Brogramming TDD?
 class: columns-2
 build_lists: true
 
-Maven provides developers ways to manage :
+- Keep fixing your code until you can't see any bugs
+- Test using alerts and console logs
+- Hotswap variables directly to corner bugs
+- Refresh the page as much as you can
+- If I can't see the bug then it's not there
+- Only bother testing with Chrome
+- Wait for your boss to yell at you...
+- Trace Driven Development
 
-- Builds
-- Documentation
-- Reporting
-- Dependencies
-- SCMs
-- Releases
-- Distribution
-- mailing list
+![Brogrammer](images/brogrammer.png)
 
-![Maven](images/maven_cycle2.png)
+ <footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer>
 
- <footer class="source">source http://books.sonatype.com/mvnref-book/reference/public-book.html</footer>
+---
+
+title:  Uncle Bob's TDD!
+class: columns-2
+build_lists: true
+
+- Write your tests before or inline with during development
+- Test using dump(), debugger and breakpoints
+- Skip, focus and mock specific tests to corner certain bugs
+- Autotest all your tests each time you update your code
+- Existing tests keep track of previously-fixed bugs
+- Test as many browsers and devices as you have access to
+- Wait for your tests or CI server to yell at you...
+- Test Driven Development
+
+![UncleBob](images/unclebob.jpg)
+
+ <footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer>
 
 ---
 
@@ -710,6 +716,5 @@ title: Conclusions ??
 class: generators
 build_lists: true
 
-- The new web development Architecture demands a better back-end and front-end integration.
-- On projects where the front-end and back-end are somewhat coupled, using Maven as our primary build system with binaries like Grunt and Bower called out as needed is completely feasible.
-- For new projects, keeping these two pieces distinctly separate comes with the flexibility to use whatever tooling chain you want, including just using Grunt for your front-end.
+- Retrofitting unit tests to code that had grown organically is a pain, especially in JavaScript.﻿
+

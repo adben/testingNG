@@ -116,16 +116,26 @@ URL: http://www.iprofs.nl
     </slide>
     
     <slide
-     >
+    class="columns-2" >
     
     <hgroup>
-        <h2>Maven</h2>
+        <h2>Brogramming TDD?</h2>
 
-        <h3>Build manager for Java projects</h3>
+        <h3></h3>
     </hgroup>
     <article
-    class="flexbox vcenter"><p><img alt="maven" src="images/maven_cycle.jpg" /></p>
-<p><footer class="source">source http://books.sonatype.com/mvnref-book/reference/public-book.html</footer></p></article>
+    ><ul class="build">
+<li>Keep fixing your code until you can't see any bugs</li>
+<li>Test using alerts and console logs</li>
+<li>Hotswap variables directly to corner bugs</li>
+<li>Refresh the page as much as you can</li>
+<li>If I can't see the bug then it's not there</li>
+<li>Only bother testing with Chrome</li>
+<li>Wait for your boss to yell at you...</li>
+<li>Trace Driven Development</li>
+</ul>
+<p><img alt="Brogrammer" src="images/brogrammer.png" /></p>
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
     
     </slide>
     
@@ -133,24 +143,23 @@ URL: http://www.iprofs.nl
     class="columns-2" >
     
     <hgroup>
-        <h2>Maven</h2>
+        <h2>Uncle Bob's TDD!</h2>
 
-        <h3>Build manager for Java projects</h3>
+        <h3></h3>
     </hgroup>
     <article
-    ><p>Maven provides developers ways to manage :</p>
-<ul class="build">
-<li>Builds</li>
-<li>Documentation</li>
-<li>Reporting</li>
-<li>Dependencies</li>
-<li>SCMs</li>
-<li>Releases</li>
-<li>Distribution</li>
-<li>mailing list</li>
+    ><ul class="build">
+<li>Write your tests before or inline with during development</li>
+<li>Test using dump(), debugger and breakpoints</li>
+<li>Skip, focus and mock specific tests to corner certain bugs</li>
+<li>Autotest all your tests each time you update your code</li>
+<li>Existing tests keep track of previously-fixed bugs</li>
+<li>Test as many browsers and devices as you have access to</li>
+<li>Wait for your tests or CI server to yell at you...</li>
+<li>Test Driven Development</li>
 </ul>
-<p><img alt="Maven" src="images/maven_cycle2.png" /></p>
-<p><footer class="source">source http://books.sonatype.com/mvnref-book/reference/public-book.html</footer></p></article>
+<p><img alt="UncleBob" src="images/unclebob.jpg" /></p>
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
     
     </slide>
     
@@ -977,9 +986,7 @@ task requirejs(type: Exec) {
     </hgroup>
     <article
     ><ul class="build">
-<li>The new web development Architecture demands a better back-end and front-end integration.</li>
-<li>On projects where the front-end and back-end are somewhat coupled, using Maven as our primary build system with binaries like Grunt and Bower called out as needed is completely feasible.</li>
-<li>For new projects, keeping these two pieces distinctly separate comes with the flexibility to use whatever tooling chain you want, including just using Grunt for your front-end.</li>
+<li>Retrofitting unit tests to code that had grown organically is a pain, especially in JavaScript.﻿</li>
 </ul></article>
     
     </slide>
