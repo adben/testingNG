@@ -1,7 +1,7 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Test<i>ing</i>NG',
+    title: 'TestingNG',
     subtitle: 'Testing Strategies With AngularJS',
     //eventTitle: 'Google I/O 2013',
     useBuilds: true, // Default: true. False will turn off slide animation builds.

@@ -22,6 +22,7 @@ Things we'll (try to) cover;
 - TDD
 - Karma
 - Protractor
+- CI
 
 ---
 
