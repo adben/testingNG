@@ -590,7 +590,103 @@ aPromise.always(function() {
 composedPromise = $.when(anAsyncFunction(), anotherAsyncFunction());
 </pre>
 
-<footer class="source">source: http://martinfowler.com/bliki/JavascriptPromise.html</footer></article>
+<footer class="source">source: http://martinfowler.com/bliki/JavascriptPromise.html and http://net.tutsplus.com/tutorials/javascript-ajax/wrangle-async-tasks-with-jquery-promises/</footer></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Protractor</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><ul class="build">
+<li>An AngularJS E2E Testing Framework</li>
+<li>Introduced during AngularJS 1.2 and Beyond presentation</li>
+<li>A new replacement of the existing E2E Testing framework</li>
+</ul>
+<p><footer class="source">source: An Introduction to AngularJS End to End Testing with Protractor http://www.youtube.com/watch?v=idb6hOxlyb8</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Protractor</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><ul class="build">
+<li>Built on WebdriverJS and Selenium Server</li>
+<li>New syntax when writing tests</li>
+<li>Allows running tests targeting remote addresses, No longer need to have test files on the server being tested</li>
+<li>Can take advantage of Selenium Grid to run multiple browsers at once; ie Sauce Labs</li>
+<li>Has it’s own runner, no need for Karma</li>
+<li>Can use Jasmine or Mocha to write test suites</li>
+</ul>
+<p><footer class="source">source: An Introduction to AngularJS End to End Testing with Protractor http://www.youtube.com/watch?v=idb6hOxlyb8</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Protractor</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Basic Test Structure">
+<br>
+var util = require('util');
+
+describe('Adjunct List', function () {
+    var ptor;
+
+    beforeEach(function () {
+        ptor = protractor.getInstance();
+        ptor.get('#/');
+    });
+
+    it('should do something', function () {
+        ptor = protractor.getInstance();
+        ptor.findElement(protractor.By.className('brand')).click();
+        expect(ptor.getCurrentUrl()).toContain('#/');
+    }, 10000);
+});
+</pre>
+
+<p><footer class="source">source: An Introduction to AngularJS End to End Testing with Protractor http://www.youtube.com/watch?v=idb6hOxlyb8</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Protractor</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><ul class="build">
+<li>Use Selenium WebdriverJS Syntax:
+<pre class="prettyprint" lang-js data-lang="Locators">
+<br>
+    ptor.findElement(protractor.By.x(‘...’));
+or
+    ptor.findElements(protractor.By.x(‘...’));
+</pre></li>
+<li>findElement returns a single element, findElements returns an array of elements.</li>
+<li>Both will throw an exception if the locator cannot find the element on the page</li>
+</ul>
+<p><footer class="source">source: An Introduction to AngularJS End to End Testing with Protractor http://www.youtube.com/watch?v=idb6hOxlyb8</footer></p></article>
     
     </slide>
     

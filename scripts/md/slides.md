@@ -419,6 +419,87 @@ composedPromise = $.when(anAsyncFunction(), anotherAsyncFunction());
 
 ---
 
+ title: Protractor
+ subtitle:
+ class: big
+ build_lists: true
+
+- An AngularJS E2E Testing Framework
+- Introduced during AngularJS 1.2 and Beyond presentation
+- A new replacement of the existing E2E Testing framework
+
+
+  <footer class="source">source: An Introduction to AngularJS End to End Testing with Protractor http://www.youtube.com/watch?v=idb6hOxlyb8</footer>
+
+---
+
+ title: Protractor
+ subtitle:
+ class: big
+ build_lists: true
+
+- Built on WebdriverJS and Selenium Server
+- New syntax when writing tests
+- Allows running tests targeting remote addresses, No longer need to have test files on the server being tested
+- Can take advantage of Selenium Grid to run multiple browsers at once; ie Sauce Labs
+- Has it’s own runner, no need for Karma
+- Can use Jasmine or Mocha to write test suites
+
+
+
+  <footer class="source">source: An Introduction to AngularJS End to End Testing with Protractor http://www.youtube.com/watch?v=idb6hOxlyb8</footer>
+
+---
+
+ title: Protractor
+ subtitle:
+ class: big
+
+<pre class="prettyprint" lang-js data-lang="Basic Test Structure">
+<br>
+var util = require('util');
+
+describe('Adjunct List', function () {
+    var ptor;
+
+    beforeEach(function () {
+        ptor = protractor.getInstance();
+        ptor.get('#/');
+    });
+
+    it('should do something', function () {
+        ptor = protractor.getInstance();
+        ptor.findElement(protractor.By.className('brand')).click();
+        expect(ptor.getCurrentUrl()).toContain('#/');
+    }, 10000);
+});
+</pre>
+
+
+  <footer class="source">source: An Introduction to AngularJS End to End Testing with Protractor http://www.youtube.com/watch?v=idb6hOxlyb8</footer>
+
+---
+
+ title: Protractor
+ subtitle:
+ class: big
+ build_lists: true
+
+- Use Selenium WebdriverJS Syntax:
+<pre class="prettyprint" lang-js data-lang="Locators">
+<br>
+	ptor.findElement(protractor.By.x(‘...’));
+or
+	ptor.findElements(protractor.By.x(‘...’));
+</pre>
+- findElement returns a single element, findElements returns an array of elements.
+- Both will throw an exception if the locator cannot find the element on the page
+
+
+
+  <footer class="source">source: An Introduction to AngularJS End to End Testing with Protractor http://www.youtube.com/watch?v=idb6hOxlyb8</footer>
+
+---
 
 
 ---
