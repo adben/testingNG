@@ -415,7 +415,7 @@ aPromise.always(function() {
 composedPromise = $.when(anAsyncFunction(), anotherAsyncFunction());
 </pre>
 
-<footer class="source">source: http://martinfowler.com/bliki/JavascriptPromise.html</footer>
+<footer class="source">source: http://martinfowler.com/bliki/JavascriptPromise.html and http://net.tutsplus.com/tutorials/javascript-ajax/wrangle-async-tasks-with-jquery-promises/</footer>
 
 ---
 
