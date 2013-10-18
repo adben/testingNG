@@ -68,6 +68,13 @@ build_lists: true
 
  <footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer>
 
+---
+
+content_class: flexbox vcenter
+
+![TDD cycle](images/tdd_flow.gif)
+
+<footer class="source">source: http://diogoosorio.com</footer>
 
 ---
 
@@ -474,14 +481,6 @@ assertEquals(10, xmlGregorianCalendar.getDay());
 assertEquals(4, xmlGregorianCalendar.getMonth());
 assertEquals(2004, xmlGregorianCalendar.getYear());}
 </pre>
-
----
-
-content_class: flexbox vcenter
-
-![TDD cycle](images/tdd_flow.gif)
-
-<footer class="source">source: http://diogoosorio.com</footer>
 
 ---
 

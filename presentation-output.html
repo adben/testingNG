@@ -164,6 +164,20 @@ URL: http://www.iprofs.nl
     </slide>
     
     <slide
+     >
+    
+    <hgroup>
+        <h2></h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    class="flexbox vcenter"><p><img alt="TDD cycle" src="images/tdd_flow.gif" /></p>
+<footer class="source">source: http://diogoosorio.com</footer></article>
+    
+    </slide>
+    
+    <slide
     class="smaller" >
     
     <hgroup>
@@ -371,7 +385,9 @@ it('should have a working myController',
   });
   expect($rootScope.data).toBe('something');
 }));
-</pre></article>
+</pre>
+
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
     
     </slide>
     
@@ -397,7 +413,9 @@ it('should have a working myDirective',
 
   expect(element.children().length).toBe(10);
 }));
-</pre></article>
+</pre>
+
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
     
     </slide>
     
@@ -417,7 +435,9 @@ it('should have a working myFactory',
   urlPrefixer('/home');
   expect($location.path()).toBe('/public/home');
 }));
-</pre></article>
+</pre>
+
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
     
     </slide>
     
@@ -445,7 +465,9 @@ it('should have a working myDirective',
     expect(interceptedPath).toBe('/admin/home');
   })
 );
-</pre></article>
+</pre>
+
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
     
     </slide>
     
@@ -465,7 +487,9 @@ it('should have a working even filter',
   expect(evenFilter([1,2,3,4])).toBe([2,4]);
   expect($filter('even')([1,2,3,4])).toBe([2,4]);
 }));
-</pre></article>
+</pre>
+
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
     
     </slide>
     
@@ -486,7 +510,9 @@ it('should have a working /home route', inject(function($location, $rootScope) {
   expect($location.path()).toBe('/home');
   expect($route.current.controller).toBe('HomeCtrl');
 }));
-</pre></article>
+</pre>
+
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
     
     </slide>
     
@@ -503,7 +529,8 @@ it('should have a working /home route', inject(function($location, $rootScope) {
 <li>Comes bundled into Karma via karma-coverage</li>
 <li>Gives you a full breakdown of what tests were captured and what tests were not</li>
 <li>Run using "grunt coverage".</li>
-</ul></article>
+</ul>
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
     
     </slide>
     
@@ -664,20 +691,6 @@ assertEquals(10, xmlGregorianCalendar.getDay());
 assertEquals(4, xmlGregorianCalendar.getMonth());
 assertEquals(2004, xmlGregorianCalendar.getYear());}
 </pre></article>
-    
-    </slide>
-    
-    <slide
-     >
-    
-    <hgroup>
-        <h2></h2>
-
-        <h3></h3>
-    </hgroup>
-    <article
-    class="flexbox vcenter"><p><img alt="TDD cycle" src="images/tdd_flow.gif" /></p>
-<footer class="source">source: http://diogoosorio.com</footer></article>
     
     </slide>
     
