@@ -236,6 +236,131 @@ The core units which make up features should be verified with accompanying unit 
 
 ---
 
+title: Controllers
+subtitle:
+class: big
+
+<pre class="prettyprint" lang-js data-lang="Controller">
+it('should have a working myController',
+  inject(function($controller, $rootScope) {
+
+  var ctrl = $controller('MyCtrl', {
+    $scope : $rootScope
+    //anything in here will act as a mock
+  });
+  expect($rootScope.data).toBe('something');
+}));
+</pre>
+
+---
+
+title: Directives
+subtitle: $compile and $digest
+class: big
+
+<pre class="prettyprint" lang-js data-lang="Directive">
+it('should have a working myDirective',
+  inject(function($compile, $rootScope, $document) {
+
+  var body = angular.element($document[0].body);
+  var element = angular.element('<div my-directive></div>');
+  body.append(element);
+
+  $compile(element)($rootScope);
+  $rootScope.$digest();
+
+  expect(element.children().length).toBe(10);
+}));
+</pre>
+
+---
+
+title: Services/Factories
+subtitle: Injecting the service...
+class: big
+
+<pre class="prettyprint" lang-js data-lang="Services">
+it('should have a working myFactory',
+  inject(function(urlPrefixer, $location) {
+
+  urlPrefixer('/home');
+  expect($location.path()).toBe('/public/home');
+}));
+</pre>
+
+---
+
+title: Services/Factories
+subtitle: Module to mock it!
+class: big
+
+<pre class="prettyprint" lang-js data-lang="Services">
+it('should have a working myDirective',
+  var interceptedPath;
+  module(function($provider) {
+    $provider.provide('$location', {
+      path : function(p) {
+        interceptedPath = p;
+      }
+    });
+  });
+  inject(function(urlCounter) {
+    urlPrefixer('/home');
+    expect(interceptedPath).toBe('/admin/home');
+  })
+);
+</pre>
+
+---
+
+title: Filters
+subtitle: Like with services...
+class: big
+
+<pre class="prettyprint" lang-js data-lang="Filters">
+it('should have a working even filter',
+  inject(function(evenFilter, $filter) {
+
+  expect(evenFilter([1,2,3,4])).toBe([2,4]);
+  expect($filter('even')([1,2,3,4])).toBe([2,4]);
+}));
+</pre>
+
+---
+
+title: Routes
+subtitle: $location
+class: big
+
+<pre class="prettyprint" lang-js data-lang="Routes">
+it('should have a working /home route', inject(function($location, $rootScope) {
+  $location.path('/home');
+  $rootScope.$digest();
+
+  expect($location.path()).toBe('/home');
+  expect($route.current.controller).toBe('HomeCtrl');
+}));
+</pre>
+
+---
+
+title: Test Coverage
+subtitle: karma-coverage
+class: big
+build_lists: true
+
+- Comes bundled into Karma via karma-coverage
+- Gives you a full breakdown of what tests were captured and what tests were not
+- Run using "grunt coverage".
+
+---
+
+
+
+
+
+---
+
  title: E2E Testing
  subtitle:
  class: segue dark nobackground
@@ -271,6 +396,9 @@ composedPromise = $.when(anAsyncFunction(), anotherAsyncFunction());
 <footer class="source">source: http://martinfowler.com/bliki/JavascriptPromise.html</footer>
 
 ---
+
+
+
 ---
 ---
 title: Demo Project

@@ -353,6 +353,174 @@ URL: http://www.iprofs.nl
     </slide>
     
     <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Controllers</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Controller">
+it('should have a working myController',
+  inject(function($controller, $rootScope) {
+
+  var ctrl = $controller('MyCtrl', {
+    $scope : $rootScope
+    //anything in here will act as a mock
+  });
+  expect($rootScope.data).toBe('something');
+}));
+</pre></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Directives</h2>
+
+        <h3>$compile and $digest</h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Directive">
+it('should have a working myDirective',
+  inject(function($compile, $rootScope, $document) {
+
+  var body = angular.element($document[0].body);
+  var element = angular.element('<div my-directive></div>');
+  body.append(element);
+
+  $compile(element)($rootScope);
+  $rootScope.$digest();
+
+  expect(element.children().length).toBe(10);
+}));
+</pre></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Services/Factories</h2>
+
+        <h3>Injecting the service...</h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Services">
+it('should have a working myFactory',
+  inject(function(urlPrefixer, $location) {
+
+  urlPrefixer('/home');
+  expect($location.path()).toBe('/public/home');
+}));
+</pre></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Services/Factories</h2>
+
+        <h3>Module to mock it!</h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Services">
+it('should have a working myDirective',
+  var interceptedPath;
+  module(function($provider) {
+    $provider.provide('$location', {
+      path : function(p) {
+        interceptedPath = p;
+      }
+    });
+  });
+  inject(function(urlCounter) {
+    urlPrefixer('/home');
+    expect(interceptedPath).toBe('/admin/home');
+  })
+);
+</pre></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Filters</h2>
+
+        <h3>Like with services...</h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Filters">
+it('should have a working even filter',
+  inject(function(evenFilter, $filter) {
+
+  expect(evenFilter([1,2,3,4])).toBe([2,4]);
+  expect($filter('even')([1,2,3,4])).toBe([2,4]);
+}));
+</pre></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Routes</h2>
+
+        <h3>$location</h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Routes">
+it('should have a working /home route', inject(function($location, $rootScope) {
+  $location.path('/home');
+  $rootScope.$digest();
+
+  expect($location.path()).toBe('/home');
+  expect($route.current.controller).toBe('HomeCtrl');
+}));
+</pre></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Test Coverage</h2>
+
+        <h3>karma-coverage</h3>
+    </hgroup>
+    <article
+    ><ul class="build">
+<li>Comes bundled into Karma via karma-coverage</li>
+<li>Gives you a full breakdown of what tests were captured and what tests were not</li>
+<li>Run using "grunt coverage".</li>
+</ul></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2></h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ></article>
+    
+    </slide>
+    
+    <slide
     class="segue dark nobackground" >
     
     <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
@@ -408,7 +576,7 @@ composedPromise = $.when(anAsyncFunction(), anotherAsyncFunction());
         <h3></h3>
     </hgroup>
     <article
-    ><hr /></article>
+    ></article>
     
     </slide>
     
