@@ -252,6 +252,8 @@ it('should have a working myController',
 }));
 </pre>
 
+ <footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer>
+
 ---
 
 title: Directives
@@ -273,6 +275,8 @@ it('should have a working myDirective',
 }));
 </pre>
 
+ <footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer>
+
 ---
 
 title: Services/Factories
@@ -287,6 +291,8 @@ it('should have a working myFactory',
   expect($location.path()).toBe('/public/home');
 }));
 </pre>
+
+ <footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer>
 
 ---
 
@@ -311,6 +317,8 @@ it('should have a working myDirective',
 );
 </pre>
 
+ <footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer>
+
 ---
 
 title: Filters
@@ -325,6 +333,8 @@ it('should have a working even filter',
   expect($filter('even')([1,2,3,4])).toBe([2,4]);
 }));
 </pre>
+
+ <footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer>
 
 ---
 
@@ -342,6 +352,8 @@ it('should have a working /home route', inject(function($location, $rootScope) {
 }));
 </pre>
 
+ <footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer>
+
 ---
 
 title: Test Coverage
@@ -352,6 +364,9 @@ build_lists: true
 - Comes bundled into Karma via karma-coverage
 - Gives you a full breakdown of what tests were captured and what tests were not
 - Run using "grunt coverage".
+
+ <footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer>
+
 
 ---
 
