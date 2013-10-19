@@ -628,7 +628,7 @@ sendKeys(keysToSend) //Use this method to simulate typing into an element,
 
 ---
 
-title:  Travis
+title:  Travis-CI
 class: columns-2
 build_lists: true
 
@@ -646,3 +646,19 @@ build_lists: true
 
 ---
 
+title: Jenkins-CI
+content_class: flexbox vcenter
+
+![TDD cycle](images/jenkins.png)
+
+---
+
+title: SauceLabs
+subtitle: Selenium testing
+content_class: flexbox vcenter
+
+![TDD cycle](images/saucelabs.jpg)
+
+<footer class="source">source: https://saucelabs.com/</footer>
+
+---
