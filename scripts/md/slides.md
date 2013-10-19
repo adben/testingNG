@@ -17,7 +17,7 @@ title: Agenda
 class: big
 build_lists: true
 
-Things we'll (try to) cover;
+We'll (try to) cover;
 
 - TDD
 - Unit Testing
