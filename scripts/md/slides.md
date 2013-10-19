@@ -272,7 +272,7 @@ it('should have a working myDirective',
   inject(function($compile, $rootScope, $document) {
 
   var body = angular.element($document[0].body);
-  var element = angular.element('<div my-directive></div>');
+  var element = angular.element('&lt;div my-directive&gt;&lt;/div&gt;');
   body.append(element);
 
   $compile(element)($rootScope);
@@ -358,6 +358,16 @@ it('should have a working /home route', inject(function($location, $rootScope) {
   expect($route.current.controller).toBe('HomeCtrl');
 }));
 </pre>
+
+ <footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer>
+
+---
+
+title:Skipping and Filtering Tests
+subtitle:
+content_class: flexbox vcenter
+
+![ Compatibility ](images/jasmine_mocha.png)
 
  <footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer>
 

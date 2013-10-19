@@ -405,7 +405,7 @@ it('should have a working myDirective',
   inject(function($compile, $rootScope, $document) {
 
   var body = angular.element($document[0].body);
-  var element = angular.element('<div my-directive></div>');
+  var element = angular.element('&lt;div my-directive&gt;&lt;/div&gt;');
   body.append(element);
 
   $compile(element)($rootScope);
@@ -512,6 +512,20 @@ it('should have a working /home route', inject(function($location, $rootScope) {
 }));
 </pre>
 
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>Skipping and Filtering Tests</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    class="flexbox vcenter"><p><img alt=" Compatibility " src="images/jasmine_mocha.png" /></p>
 <p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
     
     </slide>
