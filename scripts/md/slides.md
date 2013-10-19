@@ -612,5 +612,37 @@ sendKeys(keysToSend) //Use this method to simulate typing into an element,
 
 ---
 
+ title: CI
+ subtitle:
+ class: segue dark nobackground
 
+ ---
+
+ title: Continuous Integration
+ subtitle:
+ class: segue nobackground
+
+ Continuous Integration is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible. Many teams find that this approach leads to significantly reduced integration problems and allows a team to develop cohesive software more rapidly.
+
+ <footer class="source">source http://martinfowler.com/articles/continuousIntegration.html</footer>
+
+---
+
+title:  Travis
+class: columns-2
+build_lists: true
+
+- Sidebar
+- Build in progress [yellow]
+- Build failed [red]
+- Build passed [green]
+- Project name and links
+- Types of build
+- Build activity
+
+![Travis](images/travis-interface.png)
+
+ <footer class="source">source http://net.tutsplus.com/tutorials/tools-and-tips/travis-ci-what-why-how/</footer>
+
+---
 
