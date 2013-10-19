@@ -6,8 +6,8 @@ threadsafe: yes
 
 handlers:
 - url: /
-  static_files: workflowangularjs.html
-  upload: workflowangularjs\.html
+  static_files: presentation-output.html
+  upload: presentation-output\.html
 
 - url: /slide_config\.js
   static_files: slide_config.js
