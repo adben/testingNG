@@ -410,12 +410,16 @@ aPromise.always(function() {
 // runs either way
 });
 </pre>
-<pre class="prettyprint" lang-js data-lang="Promise">
-<br>
-composedPromise = $.when(anAsyncFunction(), anotherAsyncFunction());
-</pre>
 
 <footer class="source">source: http://martinfowler.com/bliki/JavascriptPromise.html and http://net.tutsplus.com/tutorials/javascript-ajax/wrangle-async-tasks-with-jquery-promises/</footer>
+
+---
+
+title: Protractor
+subtitle: just for AngularJS
+content_class: flexbox vcenter
+
+![ Protractor ](images/protractor.png)
 
 ---
 
@@ -456,7 +460,6 @@ composedPromise = $.when(anAsyncFunction(), anotherAsyncFunction());
  class: big
 
 <pre class="prettyprint" lang-js data-lang="Basic Test Structure">
-<br>
 var util = require('util');
 
 describe('Adjunct List', function () {
@@ -501,6 +504,71 @@ or
 
 ---
 
+ title: Protractor
+ subtitle:
+ class: big
+
+<pre class="prettyprint" lang-js data-lang="Locators">
+protractor.By.className('redBtn')
+protractor.By.css('.redBtn')
+protractor.By.id('loginButton')
+protractor.By.linkText('Go Home')
+protractor.By.partialLinktext('Home')
+protractor.By.name('email')
+protractor.By.tagName('h2')
+protractor.By.xpath('')
+</pre>
+
+---
+
+ title: Protractor
+ subtitle:
+ class: big
+
+<pre class="prettyprint" lang-js data-lang="Locators">
+protractor.By.binding('{{status}}')
+protractor.By.select("user")
+protractor.By.selectedOption("red")
+protractor.By.input("user")
+protractor.By.repeater("cat in pets")
+protractor.By.repeater("cat in pets").row(1).column("{{cat.name}}"))
+</pre>
+
+---
+
+ title: WebElement
+ subtitle: Methods
+ class: big
+
+<pre class="prettyprint" lang-js data-lang="WebElement Methods">
+<br>
+clear() //If this element is a text entry element, this will clear the value.
+click() //Click this element.
+getAttribute(name) //Get the value of a the given attribute of the element.
+getCssValue(propertyName) //Get the value of a given CSS property.
+getLocation() //Where on the page is the top left-hand corner of the rendered element?
+getSize() //What is the width and height of the rendered element?
+getTagName() //Get the tag name of this element.
+</pre>
+
+---
+
+ title: WebElement
+ subtitle: Methods
+ class: big
+
+<pre class="prettyprint" lang-js data-lang="WebElement Methods">
+<br>
+getText() // Get the visible (i.e. not hidden by CSS) innerText of this element,
+          //including sub-elements, without any leading or trailing whitespace.
+isDisplayed() // Is this element displayed or not? This method avoids the problem
+              //of having to parse an element's "style" attribute.
+isEnabled() // Is the element currently enabled or not? This will generally return
+            //true for everything but disabled input elements.
+isSelected() // Determine whether or not this element is selected or not.
+sendKeys(keysToSend) //Use this method to simulate typing into an element,
+                     //which may set its value.
+</pre>
 
 ---
 ---
@@ -734,14 +802,6 @@ class: nobackground fill
 image: images/framvslib.png
 
 <footer class="source white">http://merrickchristensen.com/articles/learn-js/mvstar-libraries-and-frameworks.html</footer>
-
----
-
-title: Protractor
-subtitle: just for AngularJS
-content_class: flexbox vcenter
-
-![ Protractor ](images/protractor.png)
 
 ---
 
