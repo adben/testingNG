@@ -1,0 +1,959 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahe <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!--
+Iprofs 2013 HTML5 Slide Template
+
+Authors: Adolfo Benedetti <abenedetti@iprof.nl>
+         Raymond Uphoff <ruphoff@iprofs.nl>
+
+URL: http://www.iprofs.nl
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google IO 2012</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!--This one seems to work all the time, but really small on ipad-->
+    <!--<meta name="viewport" content="initial-scale=0.4">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" media="all" href="theme/css/default.css">
+    <link rel="stylesheet" media="all" href="theme/css/app.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+    <base target="_blank">
+    <!-- This amazingness opens all links in a new tab. -->
+    <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+    <slide class="logoslide nobackground">
+        <article class="flexbox vcenter">
+            <span><img src="images/iprofs-logo-400x109.png"></span>
+        </article>
+    </slide>
+
+
+    <slide class="title-slide segue nobackground">
+        <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+        <hgroup class="auto-fadein">
+            <h1 data-config-title><!-- populated from slide_config.json --></h1>
+
+            <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+
+            <p data-config-presenter><!-- populated from slide_config.json --></p>
+        </hgroup>
+    </slide>
+
+    
+    <slide
+    class="fill" >
+    
+    <hgroup>
+        <h2></h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><p><img alt="hipster ecosystem" src="images/frontend-eco1.png" />
+<footer class="source">Frontend Ecosystem source: http://decodize.com/</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="fill" >
+    
+    <hgroup>
+        <h2></h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><p><img alt="hipster ecosystem" src="images/frontend-eco2.png" />
+<footer class="source">Frontend Ecosystem source: http://decodize.com/</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Agenda</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><p>We'll (try to) cover;</p>
+<ul class="build">
+<li>TDD</li>
+<li>Unit Testing</li>
+<li>E2E Testing</li>
+<li>CI</li>
+</ul></article>
+    
+    </slide>
+    
+    <slide
+    class="segue dark nobackground" >
+    
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+        <h2>TDD</h2>
+
+        <h3></h3>
+    </hgroup>
+    
+    </slide>
+    
+    <slide
+    class="columns-2" >
+    
+    <hgroup>
+        <h2>Brogramming TDD?</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><ul class="build">
+<li>Keep fixing your code until you can't see any bugs</li>
+<li>Test using alerts and console logs</li>
+<li>Hotswap variables directly to corner bugs</li>
+<li>Refresh the page as much as you can</li>
+<li>If I can't see the bug then it's not there</li>
+<li>Only bother testing with Chrome</li>
+<li>Wait for your boss to yell at you...</li>
+<li>Trace Driven Development</li>
+</ul>
+<p><img alt="Brogrammer" src="images/brogrammer.png" /></p>
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="columns-2" >
+    
+    <hgroup>
+        <h2>Uncle Bob's TDD!</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><ul class="build">
+<li>Write your tests before or inline with during development</li>
+<li>Test using dump(), debugger and breakpoints</li>
+<li>Skip, focus and mock specific tests to corner certain bugs</li>
+<li>Autotest all your tests each time you update your code</li>
+<li>Existing tests keep track of previously-fixed bugs</li>
+<li>Test as many browsers and devices as you have access to</li>
+<li>Wait for your tests or CI server to yell at you...</li>
+<li>Test Driven Development</li>
+</ul>
+<p><img alt="UncleBob" src="images/unclebob.jpg" /></p>
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2></h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    class="flexbox vcenter"><p><img alt="TDD cycle" src="images/tdd_flow.gif" /></p>
+<footer class="source">source: http://diogoosorio.com</footer></article>
+    
+    </slide>
+    
+    <slide
+    class="smaller" >
+    
+    <hgroup>
+        <h2>TDD again!</h2>
+
+        <h3>Ecosystem in JS..</h3>
+    </hgroup>
+    <article
+    ><table>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Suitest</td>
+        <td>DOH</td>
+        <td>karma/Testacular</td>
+        <td>JSUnit</td>
+        <td>EnhanceJS</td>
+        <td>QUnit</td>
+        <td>RhUnit</td>
+        <td>Crosscheck</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>J3Unit</td>
+        <td>Mocha</td>
+        <td>intern</td>
+        <td>JSNUnit</td>
+        <td>YUI Test</td>
+        <td>JSSpec</td>
+        <td>UnitTesting</td>
+        <td>JSpec</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Jasmine</td>
+        <td>screw-unit</td>
+        <td>Test.Simple</td>
+        <td>Test.More</td>
+        <td>TestCase</td>
+        <td>TestIt</td>
+        <td>jsUnitTest</td>
+        <td>JSTest</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>JSTest.NET</td>
+        <td>jsUnity</td>
+        <td>RhinoUnit</td>
+        <td>JasUnit</td>
+        <td>FireUnit</td>
+        <td>Js-test-driver</td>
+        <td>Js-test-runner</td>
+        <td>Sinon.js</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>SOAtest</td>
+        <td>Vows</td>
+        <td>Nodeunit</td>
+        <td>Tyrtle</td>
+        <td>wru</td>
+        <td>Buster.JS</td>
+        <td>Protractor</td>
+        <td>LBRTW UT</td>
+</table>
+
+<footer class="source">source: https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#JavaScript</footer></article>
+    
+    </slide>
+    
+    <slide
+    class="smaller" >
+    
+    <hgroup>
+        <h2>TDD again!</h2>
+
+        <h3>Ecosystem in JS..</h3>
+    </hgroup>
+    <article
+    ><table>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td></td>
+
+        <td>Suitest</td>
+        <td>DOH</td>
+        <td class="highlight">karma/Testacular</td>
+        <td>JSUnit</td>
+        <td>EnhanceJS</td>
+        <td>QUnit</td>
+        <td>RhUnit</td>
+        <td>Crosscheck</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>J3Unit</td>
+        <td class="highlight">Mocha</td>
+        <td>intern</td>
+        <td>JSNUnit</td>
+        <td>YUI Test</td>
+        <td>JSSpec</td>
+        <td>UnitTesting</td>
+        <td>JSpec</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="highlight">Jasmine</td>
+        <td>screw-unit</td>
+        <td>Test.Simple</td>
+        <td>Test.More</td>
+        <td>TestCase</td>
+        <td>TestIt</td>
+        <td>jsUnitTest</td>
+        <td>JSTest</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>JSTest.NET</td>
+        <td>jsUnity</td>
+        <td>RhinoUnit</td>
+        <td>JasUnit</td>
+        <td>FireUnit</td>
+        <td>Js-test-driver</td>
+        <td>Js-test-runner</td>
+        <td>Sinon.js</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>SOAtest</td>
+        <td>Vows</td>
+        <td>Nodeunit</td>
+        <td>Tyrtle</td>
+        <td>wru</td>
+        <td>Buster.JS</td>
+        <td class="highlight">Protractor</td>
+        <td>LBRTW UT</td>
+</table>
+
+<footer class="source">source: https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#JavaScript</footer></article>
+    
+    </slide>
+    
+    <slide
+    class="segue dark nobackground" >
+    
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+        <h2>Unit Testing</h2>
+
+        <h3></h3>
+    </hgroup>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2></h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><p>Unit Testing</p>
+<p>The core units which make up features should be verified with accompanying unit tests. In JavaScript apps, the smallest units of code you can test are usually individual functions.</p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Controllers</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Controller">
+it('should have a working myController',
+  inject(function($controller, $rootScope) {
+
+  var ctrl = $controller('MyCtrl', {
+    $scope : $rootScope
+    //anything in here will act as a mock
+  });
+  expect($rootScope.data).toBe('something');
+}));
+</pre>
+
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Directives</h2>
+
+        <h3>$compile and $digest</h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Directive">
+it('should have a working myDirective',
+  inject(function($compile, $rootScope, $document) {
+
+  var body = angular.element($document[0].body);
+  var element = angular.element('&lt;div my-directive&gt;&lt;/div&gt;');
+  body.append(element);
+
+  $compile(element)($rootScope);
+  $rootScope.$digest();
+
+  expect(element.children().length).toBe(10);
+}));
+</pre>
+
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Services/Factories</h2>
+
+        <h3>Injecting the service...</h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Services">
+it('should have a working myFactory',
+  inject(function(urlPrefixer, $location) {
+
+  urlPrefixer('/home');
+  expect($location.path()).toBe('/public/home');
+}));
+</pre>
+
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Services/Factories</h2>
+
+        <h3>Module to mock it!</h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Services">
+it('should have a working myDirective',
+  var interceptedPath;
+  module(function($provider) {
+    $provider.provide('$location', {
+      path : function(p) {
+        interceptedPath = p;
+      }
+    });
+  });
+  inject(function(urlCounter) {
+    urlPrefixer('/home');
+    expect(interceptedPath).toBe('/admin/home');
+  })
+);
+</pre>
+
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Filters</h2>
+
+        <h3>Like with services...</h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Filters">
+it('should have a working even filter',
+  inject(function(evenFilter, $filter) {
+
+  expect(evenFilter([1,2,3,4])).toBe([2,4]);
+  expect($filter('even')([1,2,3,4])).toBe([2,4]);
+}));
+</pre>
+
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Routes</h2>
+
+        <h3>$location</h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Routes">
+it('should have a working /home route', inject(function($location, $rootScope) {
+  $location.path('/home');
+  $rootScope.$digest();
+
+  expect($location.path()).toBe('/home');
+  expect($route.current.controller).toBe('HomeCtrl');
+}));
+</pre>
+
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>Skipping and Filtering Tests</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    class="flexbox vcenter"><p><img alt=" Compatibility " src="images/jasmine_mocha.png" /></p>
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Test Coverage</h2>
+
+        <h3>karma-coverage</h3>
+    </hgroup>
+    <article
+    ><ul class="build">
+<li>Comes bundled into Karma via karma-coverage</li>
+<li>Gives you a full breakdown of what tests were captured and what tests were not</li>
+<li>Run using "grunt coverage".</li>
+</ul>
+<p><footer class="source">source http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html</footer></p></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2></h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ></article>
+    
+    </slide>
+    
+    <slide
+    class="segue dark nobackground" >
+    
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+        <h2>E2E Testing</h2>
+
+        <h3></h3>
+    </hgroup>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Promises</h2>
+
+        <h3>... or futures, deferreds</h3>
+    </hgroup>
+    <article
+    ><p>Promises are objects which represent the pending result of an asynchronous operation. You can use these to schedule further activity after the asynchronous operation has completed by supplying a callback.
+<br>
+Providing a clear interface to schedule activity with asynchronous tasks, they also compose.</p>
+<footer class="source">source: http://martinfowler.com/bliki/JavascriptPromise.html and http://net.tutsplus.com/tutorials/javascript-ajax/wrangle-async-tasks-with-jquery-promises/</footer></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Promises</h2>
+
+        <h3>... or futures, deferreds</h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Promise">
+<br>
+aPromise = someAsyncOperation();
+aPromise.done(function() {
+// runs if all went well
+});
+aPromise.fail(function() {
+// runs if something went wrong
+});
+aPromise.always(function() {
+// runs either way
+});
+</pre>
+
+<footer class="source">source: http://martinfowler.com/bliki/JavascriptPromise.html and http://net.tutsplus.com/tutorials/javascript-ajax/wrangle-async-tasks-with-jquery-promises/</footer></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>Protractor</h2>
+
+        <h3>just for AngularJS</h3>
+    </hgroup>
+    <article
+    class="flexbox vcenter"><p><img alt=" Protractor " src="images/protractor.png" /></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Protractor</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><ul class="build">
+<li>An AngularJS E2E Testing Framework</li>
+<li>Introduced during AngularJS 1.2 and Beyond presentation</li>
+<li>A new replacement of the existing E2E Testing framework</li>
+</ul>
+<p><footer class="source">source: An Introduction to AngularJS End to End Testing with Protractor http://www.youtube.com/watch?v=idb6hOxlyb8</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Protractor</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><ul class="build">
+<li>Built on WebdriverJS and Selenium Server</li>
+<li>New syntax when writing tests</li>
+<li>Allows running tests targeting remote addresses, No longer need to have test files on the server being tested</li>
+<li>Can take advantage of Selenium Grid to run multiple browsers at once; ie Sauce Labs</li>
+<li>Has it’s own runner, no need for Karma</li>
+<li>Can use Jasmine or Mocha to write test suites</li>
+</ul>
+<p><footer class="source">source: An Introduction to AngularJS End to End Testing with Protractor http://www.youtube.com/watch?v=idb6hOxlyb8</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Protractor</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><ul>
+<li>
+<p>Installed via Node Package Manager
+<pre class="prettyprint" lang-sh data-lang="$">
+<br>
+npm install protractor
+</pre></p>
+</li>
+<li>
+<p>Install Selenium Standalone Server
+<pre class="prettyprint" lang-sh data-lang="$">
+<br>
+node_modules/protractor/bin/install_selenium_standalone
+</pre></p>
+</li>
+<li>
+<p>Note: The Standalone Server is not needed if you are going to run against an existing Selenium Grid or Installation</p>
+</li>
+<li>Note: Windows users need to execute second command from node</li>
+</ul>
+<p><footer class="source">source: An Introduction to AngularJS End to End Testing with Protractor http://www.youtube.com/watch?v=idb6hOxlyb8</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Protractor</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Basic Test Structure">
+var util = require('util');
+
+describe('Adjunct List', function () {
+    var ptor;
+
+    beforeEach(function () {
+        ptor = protractor.getInstance();
+        ptor.get('#/');
+    });
+
+    it('should do something', function () {
+        ptor = protractor.getInstance();
+        ptor.findElement(protractor.By.className('brand')).click();
+        expect(ptor.getCurrentUrl()).toContain('#/');
+    }, 10000);
+});
+</pre>
+
+<p><footer class="source">source: An Introduction to AngularJS End to End Testing with Protractor http://www.youtube.com/watch?v=idb6hOxlyb8</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Protractor</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><ul class="build">
+<li>Use Selenium WebdriverJS Syntax:
+<pre class="prettyprint" lang-js data-lang="Locators">
+<br>
+    ptor.findElement(protractor.By.x(‘...’));
+or
+    ptor.findElements(protractor.By.x(‘...’));
+</pre></li>
+<li>findElement returns a single element, findElements returns an array of elements.</li>
+<li>Both will throw an exception if the locator cannot find the element on the page</li>
+</ul>
+<p><footer class="source">source: An Introduction to AngularJS End to End Testing with Protractor http://www.youtube.com/watch?v=idb6hOxlyb8</footer></p></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Protractor</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Locators">
+protractor.By.className('redBtn')
+protractor.By.css('.redBtn')
+protractor.By.id('loginButton')
+protractor.By.linkText('Go Home')
+protractor.By.partialLinktext('Home')
+protractor.By.name('email')
+protractor.By.tagName('h2')
+protractor.By.xpath('')
+</pre></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>Protractor</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="Locators">
+protractor.By.binding('{{status}}')
+protractor.By.select("user")
+protractor.By.selectedOption("red")
+protractor.By.input("user")
+protractor.By.repeater("cat in pets")
+protractor.By.repeater("cat in pets").row(1).column("{{cat.name}}"))
+</pre></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>WebElement</h2>
+
+        <h3>Methods</h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="WebElement Methods">
+<br>
+clear() //If this element is a text entry element, this will clear the value.
+click() //Click this element.
+getAttribute(name) //Get the value of a the given attribute of the element.
+getCssValue(propertyName) //Get the value of a given CSS property.
+getLocation() //Where on the page is the top left-hand corner of the rendered element?
+getSize() //What is the width and height of the rendered element?
+getTagName() //Get the tag name of this element.
+</pre></article>
+    
+    </slide>
+    
+    <slide
+    class="big" >
+    
+    <hgroup>
+        <h2>WebElement</h2>
+
+        <h3>Methods</h3>
+    </hgroup>
+    <article
+    ><pre class="prettyprint" lang-js data-lang="WebElement Methods">
+<br>
+getText() // Get the visible (i.e. not hidden by CSS) innerText of this element,
+          //including sub-elements, without any leading or trailing whitespace.
+isDisplayed() // Is this element displayed or not? This method avoids the problem
+              //of having to parse an element's "style" attribute.
+isEnabled() // Is the element currently enabled or not? This will generally return
+            //true for everything but disabled input elements.
+isSelected() // Determine whether or not this element is selected or not.
+sendKeys(keysToSend) //Use this method to simulate typing into an element,
+                     //which may set its value.
+</pre></article>
+    
+    </slide>
+    
+    <slide
+    class="segue dark nobackground" >
+    
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+        <h2>CI</h2>
+
+        <h3></h3>
+    </hgroup>
+    
+    </slide>
+    
+    <slide
+    class="columns-2" >
+    
+    <hgroup>
+        <h2>Travis-CI</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ><ul class="build">
+<li>Sidebar</li>
+<li>Build in progress [yellow]</li>
+<li>Build failed [red]</li>
+<li>Build passed [green]</li>
+<li>Project name and links</li>
+<li>Types of build</li>
+<li>Build activity</li>
+</ul>
+<p><img alt="Travis" src="images/travis-interface.png" /></p>
+<p><footer class="source">source http://net.tutsplus.com/tutorials/tools-and-tips/travis-ci-what-why-how/</footer></p></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>Jenkins-CI</h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    class="flexbox vcenter"><p><img alt="TDD cycle" src="images/jenkins.png" /></p></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2>SauceLabs</h2>
+
+        <h3>Selenium testing</h3>
+    </hgroup>
+    <article
+    class="flexbox vcenter"><p><img alt="TDD cycle" src="images/saucelabs.jpg" /></p>
+<footer class="source">source: https://saucelabs.com/</footer></article>
+    
+    </slide>
+    
+    <slide
+     >
+    
+    <hgroup>
+        <h2></h2>
+
+        <h3></h3>
+    </hgroup>
+    <article
+    ></article>
+    
+    </slide>
+    
+
+    <slide class="thank-you-slide segue nobackground">
+        <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
+        <article class="flexbox vleft auto-fadein">
+            <h2>&lt;Thank You!&gt;</h2>
+
+        </article>
+        <p class="auto-fadein" data-config-contact>
+            <!-- populated from slide_config.json -->
+        </p>
+    </slide>
+
+    <slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<!--[if IE]>
+<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+<script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
